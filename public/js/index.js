@@ -6,7 +6,7 @@ var count = 0;
 setInterval(function () {
     $('.loadingPage').css('display', 'none');
     $('.HomePage').css('display', 'block');
-}, 4000);
+}, 15000);
 // const tsParticles = require("tsparticles");
 // tsParticles
 //   .loadJSON("tsparticles", "presets/default.json")
