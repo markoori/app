@@ -1,0 +1,91 @@
+       <!-- mobile menu list -->
+   <div class="mpages">
+    <ul>
+        <a href="/"><li>Home</li></a>
+        <a href="/vendors"><li>Vendors</li></a>
+        <a href="/blog"><li>Blog</li></a>
+        <li><a href="/about">About us</a></li>
+        <a href="/contact"><li>Contact</li></a>
+    </ul>
+</div>
+
+<header>
+    <div class="logo">
+        <sup><img src="/img/img/OBJECT.png" alt="Tc logo"></sup>
+        <p>TasteClan</p>                
+    </div>
+    <div class="hamburger">
+       <ul>
+           <li></li>
+           <li></li>
+           <li></li>
+       </ul>
+    </div>
+    <div class="wpages">
+        <ul>
+            <a href="/"><li>Home</li></a>
+            <a href="/vendors"><li>Vendors</li></a>
+            <a href="/blog"><li>Blog</li></a>
+            <li><a href="/about">About us</a></li>
+            <a href="/contact"><li>Contact</li></a>
+        </ul>
+    </div>
+
+    <div class="search">
+        <img src="/img/icons/Search.png" alt="">
+        <input type="text" name="search" id="search" placeholder="search Meal..." onfocus="{{
+            $('.searchPage').css({'width':'93%','height':'100vh'})
+        }}">
+    </div>
+
+    <link rel="stylesheet" href="/css/temp.css">
+    <!-- search page -->
+    <div class="searchPage">
+        <div class="close">
+            <i class="bi bi-x-lg" onclick="{{$('.searchPage').css('width','0%')}}"></i>
+        </div>
+        <div class="searchArea">
+            <form action="" onsubmit="{{
+                document.querySelector('.tempRes').style.display = 'flex';
+                setTimeout(()=>{document.querySelector('.tempRes').style.display = 'none'},3000)
+                }}; return false;">
+                <i class="bi bi-search"></i>
+                <input type="search" placeholder="search vendors or places">
+                <input type="submit" value="SEARCH">
+            </form>
+        </div>
+        <div class="result">
+            <div class="header">
+                <h3>Popular Searches</h3>
+            </div>
+            <ul>
+                <li>Sweet Savor</li>
+                <li>Sweet Savor</li>
+                <li>Sweet Savor</li>
+                <li>Sweet Savor</li>
+                <li>Sweet Savor</li>
+                <li>Sweet Savor</li>
+                <li>Sweet Savor</li>
+                <li>Sweet Savor</li>
+                <!-- <li>Sweet Savor</li>
+                <li>Sweet Savor</li>
+                <li>Sweet Savor</li>
+                <li>Sweet Savor</li> -->
+            </ul>
+        </div>
+
+        <div class="tempRes">
+                <img src="/img/icons/Emoji.png" alt="">
+                <h3>We didn't find anything in our database</h3>
+                <span class="button"><a href="/vendors">VIEW ALL RESTAURANTS</a></span>
+        </div>
+    </div>
+    <!-- end of search page -->
+    
+    <div class="sign-log">
+        <ul>
+            <a href="/login"><li class="login">Login</li></a>
+            <li class="signup"> <span><a href="/login">Sign Up</a></span></li>
+        </ul>
+    </div>
+</header>
