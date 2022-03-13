@@ -1,4 +1,5 @@
 const express = require('express');
+//const fetch_food = require('../../../services/db2Client')
 
 const router = express.Router();
 
@@ -43,12 +44,21 @@ router.get('/blog',(req,res)=>{
 
 // cart
 router.get('/cart',(req,res)=>{
-    res.render('soon')
+    res.render('cart')
 })
 
 // vendor
 router.get('/vendors',(req,res)=>{
     res.render('vendors')
+})
+
+// router.get('/food_vendor',(req,res)=>{
+//     info = fetch_food()
+//     res.render('foodsection',{data : {info}})
+// })
+
+router.get('/order',(req,res)=>{
+    res.render('orderfood')
 })
 
 router.get('/restaurants',(req,res)=>{
