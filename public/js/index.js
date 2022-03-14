@@ -6,7 +6,7 @@ var count = 0;
 setInterval(function () {
     $('.loadingPage').css('display', 'none');
     $('.HomePage').css('display', 'block');
-}, 30000);
+}, 2000);
 // const tsParticles = require("tsparticles");
 // tsParticles
 //   .loadJSON("tsparticles", "presets/default.json")
@@ -20,16 +20,18 @@ setInterval(function () {
 $(".hamburger").on("click", function () {
     hamburgerCounter++;
     if (hamburgerCounter % 2 == 1) {
-        $(".hamburger ul li:nth-Child(1)").css({ 'transform': 'translateY(0px) rotate(45deg)', 'transition': 0.4, 'position': 'fixed' });
+        $(".hamburger ul").css('position', 'fixed');
+        $(".hamburger ul li:nth-Child(1)").css({ 'transform': 'translateY(10px) rotate(45deg)', 'transition': 0.4 });
         $(".hamburger ul li:nth-Child(2)").css('display', 'none');
-        $(".hamburger ul li:nth-Child(3)").css({ 'transform': 'rotate(-45deg)', 'position': 'fixed' });
+        $(".hamburger ul li:nth-Child(3)").css({ 'transform': 'rotate(-45deg)' });
         $(".mpages").css({ 'width': '75%', 'display': 'block', 'transition': '130s', 'position': 'fixed' });
         $("html").css('');
     }
     else {
+        $(".hamburger ul").css('position', 'fixed');
         $(".hamburger ul li:nth-Child(1)").css({ 'transform': 'translateY(0px) rotate(0deg)', 'transition': 0.4 });
-        $(".hamburger ul li:nth-Child(2)").css('display', 'block');
-        $(".hamburger ul li:nth-Child(3)").css('transform', 'rotate(0deg)');
+        $(".hamburger ul li:nth-Child(2)").css({ 'display': 'block' });
+        $(".hamburger ul li:nth-Child(3)").css({ 'transform': 'rotate(0deg)' });
         $(".mpages").css({ 'width': '0%', 'display': 'none', 'transition': '2s' });
     }
 });
@@ -45,7 +47,7 @@ for (var i = 1; i <= numOfPics; i++) {
 var creatImg = document.createElement("img"); //creating img element
 setInterval(function () {
     //making the src attribute of the img element take the location of the images to be displayed
-    creatImg.src = "/img/img/" + imgArray[count] + ".png";
+    creatImg.src = "./public/img/img/" + imgArray[count] + ".png";
     landingImg.appendChild(creatImg); // appending the created img element to the class .img
     countnumber.innerHTML = "0" + (count + 1) + " <sup> /" + numOfPics + " </sup>";
     count++;
@@ -118,7 +120,7 @@ function RequiredChecker(parentClass) {
     state ? "" : alert("Some required fields need to be filled!");
 }
 // Set the date we're counting down to
-var countDownDate = new Date("Jan 31, 2022 15:37:25").getTime();
+var countDownDate = new Date("Feb 26, 2022 15:37:25").getTime();
 // Update the count down every 1 second
 var x = setInterval(function () {
     // Get today's date and time
