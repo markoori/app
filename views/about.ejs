@@ -4,52 +4,60 @@
 <nav>
     <%- include("./partials/menu") %>
 </nav>
+
 <body>
 
     <div class="aboutPage">
     
-        <!-- <div class="mpages">
-            <ul>
-                <li>Home</li>
-                <li>Vendors</li>
-                <li>Blog</li>
-                <li>About us</li>
-                <li>Contact</li>
-            </ul>
-        </div>
-        <header>
-            <div class="logo">
-                <sup><img src="/img/img/OBJECT.png" alt="Tc logo"></sup>
-                <p>TasteClan</p>                
-            </div>
-            <div class="hamburger">
-               <ul>
-                   <li></li>
-                   <li></li>
-                   <li></li>
-               </ul>
-            </div>
-            <div class="wpages">
+        <!-- <nav>
+            <div class="mpages">
                 <ul>
-                    <li>Home</li>
-                    <li>Vendors</li>
-                    <li>Blog</li>
-                    <li>About us</li>
-                    <li>Contact</li>
+                    <a href="/"><li>Home</li></a>
+                    <i class="bi bi-arrow-down-circle"></i>
+                    <a href="/vendors"><li>Vendors</li></a>
+                    <a href="/blog"><li>Blog</li></a>
+                    <li><a href="/about">About us</a></li>
+                    <a href="/contact"><li>Contact</li></a>
                 </ul>
             </div>
-            <div class="search">
-                <img src="/img/icons/Search.png" alt="">
-                <input type="text" name="search" id="search" placeholder="search Meal...">
+            <div class="extras hom-extra-1">
+                <img src="./public/img/img/cssp 1.png" alt="">
             </div>
-            <div class="sign-log">
-                <ul>
-                    <li class="login"><a href="/login">Login</a></li>
-                    <li class="signup"> <span><a href="/login">Sign Up</a></span></li>
-                </ul>
-             
-            </div>
-        </header> -->
+            <header>
+                <div class="logo">
+                    <img src="/img/icons/logo.png" alt="Tc logo">                
+                </div>
+                <div class="hamburger">
+                   <ul>
+                       <li></li>
+                       <li></li>
+                       <li></li>
+                   </ul>
+                </div>
+                <div class="wpages">
+                    <ul>
+                        <a href="/"><li>Home</li></a>
+                        <a href="/vendors"><li>Vendors</li></a>
+                        <a href="/blog"><li>Blog</li></a>
+                        <li><a href="/about">About us</a></li>
+                        <a href="/contact"><li>Contact</li></a>
+                    </ul>
+                </div>
+                <div class="search">
+                    <img src="./public/img/icons/Search.png" alt="">
+                    <input type="text" name="search" id="search" placeholder="search Meal...">
+                </div>
+                <div class="sign-log">
+                    <ul>
+                        <a href="./views/Login.htm" target="_blank"><li class="login">Login</li></a>
+                        <li class="signup"> <span>Sign Up</span></li>
+                    </ul>
+                 
+                </div>
+            </header>
+        </nav> -->
+
+
         <main>
             <div class="aboutusMain">
     
@@ -60,12 +68,13 @@
                 <section>
                     <div class="aboutSection">
                         <div class="aboutusContent">
-                            <h3>About Us</h3>
-                            <h1>Sub Text</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam impedit quia corporis voluptatum blanditiis quae ratione voluptatem dolorem quam possimus! Eaque, ipsa? <br><br> Pariatur, temporibus! Dolor architecto nostrum minima illo. Recusandae?
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident perferendis dolores mollitia reiciendis deleniti natus veniam culpa nemo. Sequi tempora ab non voluptates fugit repellat asperiores ipsam atque sit molestias!
-                                Ad consectetur alias excepturi debitis est inventore, dolorem, quis sint eligendi ipsum omnis autem! Harum minima blanditiis reprehenderit eum est commodi velit voluptates, repellat aut praesentium pariatur voluptatem fugit hic.
+                            <h4>About Us</h4>
+                            <h3>Who & What?</h3>
+                            <p> We at TasteClan are a group of people united by a common interest: to see the youth vigorous and vibrant again! We noticed how college
+                                 structures usually leave the students stressed out and tired, feeding on nothing but junk at irregular periods and we set out to change that.                           
                             </p>
+                            <p> We aim to connect students, and working class individuals alike, to healthy food at just the right time. In addition, we periodically supply 
+                                valuable information about good eating habits and also endorse the businesses of student foodpreneurs </p>
                         </div>
                         <div class="extras abtextra-2">
                             <img src="/img/img/Layer 13@1 1.png" alt="">
@@ -113,7 +122,7 @@
                 <section>
                     <div class="ourStorySection">
                         <div class="header">
-                            <h2>Our Story</h2>
+                            <h4>Our Story</h4>
                         </div>
                         <div class="ourStory-Content">
                             <div class="videos-container">
@@ -127,19 +136,19 @@
                             </div>
                             <div class="text-container">
                                 <div class="text">
-                                    <h2>Ideas</h2>
+                                    <h6>Ideas</h6>
                                     <p>It all started from a single idea. We wanted to create a place that would <br>
                                         offer its customers easy ordering and deliver of their favorite dishes.
                                     </p>
                                 </div>
                                 <div class="text">
-                                    <h2>Develop</h2>
+                                    <h6>Develop</h6>
                                     <p>The website was designed and develope in order to help student get their <br>
                                         food easily. It took months and pain to get the site up. United we stand!
                                     </p>
                                 </div>
                                 <div class="text">
-                                    <h2>Opening</h2>
+                                    <h6>Opening</h6>
                                     <p>After making necessary preparations, completing our staff with <br>
                                         experieced people, we were ready fro new guests and clients. <br> #TasteClan
                                     </p>
@@ -161,24 +170,27 @@
                     <div class="howToOrderSection">
                         <div class="text-container">
                             <div class="text-box">
-                                <h3>Search</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi deserunt mollitia inventore accusantium soluta reiciendis</p>
+                                <h5>Search</h5>
+                                <span><p>01</p></span>
+                                <p>Type out the healthy dish you crave to look through our options.</p>
                             </div>
                             <div class="text-box">
-                                <h3>Order & Check Out</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi deserunt mollitia inventore accusantium soluta reiciendis</p>
+                                <h5>Order & Check Out</h5>
+                                <span><p>02</p></span>
+                                <p>Add the dish to your cart and make your order.</p>
                             </div>
                             <div class="text-box">
-                                <h3>Delivery & Enjoy</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi deserunt mollitia inventore accusantium soluta reiciendis</p>
+                                <h5>Delivery & Enjoy</h5>
+                                <span><p>03</p></span>
+                                <p>Wait a few minutes for your dish to get to your location and relish your nutritious deliciousness</p>
                             </div>
                         </div>
                         <div class="img">
                             <img src="/img/img/fast-food-french-fries-hamburger-junk-food-mcdonald-s-big-mac-junk-food-531e90bafa3634e4434a98ac39076514.png" alt="">
                         </div>
                         <div class="howto">
-                            <h2>How to Order</h2>
-                            <h1>There are 3 step to get your yummy and delicious meal</h1>
+                            <h4>How to Order</h4>
+                            <h3>There are 3 step to get your yummy and delicious meal</h3>
                             <video src="/video/2008-01-01 03-01-06.mkv" controls></video>
                         </div>
                     </div>
@@ -189,27 +201,27 @@
                         <div class="ser ser-1">
                             <img src="/img/icons/calendar.png" alt="services icons">
                             <h2>800</h2>
-                            <h5>ORDERS RECEIVED</h5>
+                            <p>ORDERS RECEIVED</p>
                         </div>
                         <div class="ser ser-2">
                             <img src="/img/icons/take-away.png" alt="services icons">
                             <h2>633</h2>
-                            <h5>FOOD DELIVERED</h5>
+                            <p>FOOD DELIVERED</p>
                         </div>
                         <div class="ser ser-3">
                             <img src="/img/icons/Group.png" alt="services icons">
                             <h2>1000</h2>
-                            <h5>CLIENTS EVERYDAY</h5>
+                            <p>CLIENTS EVERYDAY</p>
                         </div>
                         <div class="ser ser-4">
                             <img src="/img/icons/customer-satisfaction.png" alt="services icons">
                             <h2>3050</h2>
-                            <h5>HAPPY CUSTOMERS</h5>
+                            <p>HAPPY CUSTOMERS</p>
                         </div>
                         <div class="ser ser-5">
                             <img src="/img/icons/Group (1).png" alt="services icons">
                             <h2>200</h2>
-                            <h5>CITIES</h5>
+                            <p>CITIES</p>
                         </div>
                     </div>
                     <!-- <div class="extras abtextra-6">
@@ -227,18 +239,18 @@
                 <section>
                     <div class="ourTeamSection">
                         <div class="ourTeam-container">
-                            <h3>Our Support Team will assist you with any question</h3>
+                            <h4>Our Support Team will assist you with any question</h4>
                             <div class="ourTeamServicesOptions">
                                 <div class="ourTeam-box">
-                                    <h4>Email</h4>
+                                    <h6>Email</h6>
                                     <p>info.tasteclan@gmail.com</p>
                                 </div>
                                 <div class="ourTeam-box">
-                                    <h4>Need Expert</h4>
+                                    <h6>Need Expert</h6>
                                     <p>Get a quote</p>
                                 </div>
                                 <div class="ourTeam-box">
-                                    <h4>Telephone</h4>
+                                    <h6>Telephone</h6>
                                     <p>+234 812 3849 340</p>
                                 </div>
                             </div>
@@ -254,7 +266,6 @@
     
             
     </div>
+    <%- include("./partials/footer") %>
     </body>
-
-<%- include("./partials/footer") %>
-<%- include("./partials/scripts") %>
+    <%- include("./partials/scripts") %>
