@@ -47,7 +47,7 @@ for (var i = 1; i <= numOfPics; i++) {
 var creatImg = document.createElement("img"); //creating img element
 setInterval(function () {
     //making the src attribute of the img element take the location of the images to be displayed
-    creatImg.src = "./public/img/img/" + imgArray[count] + ".png";
+    creatImg.src = "/img/img/" + imgArray[count] + ".png";
     landingImg.appendChild(creatImg); // appending the created img element to the class .img
     countnumber.innerHTML = "0" + (count + 1) + " <sup> /" + numOfPics + " </sup>";
     count++;
