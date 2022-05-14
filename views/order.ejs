@@ -1,0 +1,556 @@
+<%- include ("./partials/header") %>
+<title>Order</title>
+</head>
+<style>
+    .logo img{width: 30px}
+    .vendor-12{opacity: .4;cursor: pointer}
+    .cateens .box .info h4{line-height: 2px;text-align: center;}
+    .cateens .box .info div{height: 18px;}
+    .vendor-content .cateens .img{background: url("https://www.inspiredtaste.net/wp-content/uploads/2019/03/Spaghetti-with-Meat-Sauce-Recipe-1-1200.jpg");
+                                  background-size: contain;border-radius: 50%;}
+                                
+    
+</style>
+<body>
+    <style>
+        /* .vendor-12{opacity: .4;cursor: pointer}
+        .cateens .box .info h4{line-height: 2px;text-align: center;}
+        .cateens .box .info div{height: 18px;}
+        .vendor-content .cateens .img{background: url("https://www.inspiredtaste.net/wp-content/uploads/2019/03/Spaghetti-with-Meat-Sauce-Recipe-1-1200.jpg");
+                                      background-size: contain;border-radius: 50%;}
+        .users-info{display: flex;position:fixed} */
+    </style>
+     <div class="vendorPage">
+       
+        <nav style="z-index: 3;">
+            <div class="mpages">
+                <ul>
+                    <a href="/"><li>Home</li></a>
+                    <a href="/vendors"><li>Vendors</li></a>
+                    <a href="/blog"><li>Blog</li></a>
+                    <li><a href="/about">About us</a></li>
+                    <a href="/contact"><li>Contact</li></a>
+                </ul>
+            </div>
+
+            <header>
+                <div class="logo">
+                    <img src="/img/icons/logo.png" alt="Tc logo">               
+                </div>
+                <div class="hamburger">
+                   <ul>
+                       <li></li>
+                       <li></li>
+                       <li></li>
+                   </ul>
+                </div>
+                <div class="wpages">
+                    <ul>
+                        <a href="/"><li>Home</li></a>
+                        <a href="/vendors"><li>Vendors</li></a>
+                        <a href="/blog"><li>Blog</li></a>
+                        <li><a href="/about">About us</a></li>
+                        <a href="/contact"><li>Contact</li></a>
+                    </ul>
+                </div>
+                <div class="search">
+                    <img src="/img/icons/Search.png" alt="">
+                    <input type="text" name="search" id="search" placeholder="search Meal...">
+                </div>
+                <div class="sign-log">
+                    <div class="users-info">
+                        <a href="/cart">
+                            <i class="bi bi-cart4" style="font-size: 24px;"></i>
+                            <span id="count">0</span>
+                        </a>
+                    </div>
+                </div>
+            </header>
+        </nav>
+    
+        <div class="breadCrum">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <i class="bi bi-chevron-right"></i>
+                <li>Vendor</li>
+            </ul>
+        </div>
+    
+        <div class="main-content-container">
+            <aside>
+                <div class="decorator"></div>
+                <div class="side-menu">
+                    <div class="search">
+                        <i class="bi bi-search"></i>
+                        <input type="text" placeholder="Enter location">
+                    </div>
+                    <div class="categories">
+                        <div class="header">
+                            <h5>Categories</h5>
+                            <span onclick="{{this.style.display = 'none'; this.nextElementSibling.style.display = 'block'; }}"><i class="bi bi-caret-up-fill"></i></span>
+                            <span onclick="{{ this.style.display = 'none'; this.previousElementSibling.style.display = 'block'; }}" class="down"><i class="bi bi-caret-down-fill"></i></span>
+                        </div>
+                        <ul>
+                            <li>Main Dish <span><input type="checkbox" name="" id=""></span></li>
+                            <li>Appetizers & Desserts <span><input type="checkbox" name="" id=""></span></li>
+                            <li>Side & Grills <span><input type="checkbox" name="" id=""></span></li>
+                            <li>Bar Menu <span><input type="checkbox" name="" id=""></span></li>
+                            <li>Drinks <span><input type="checkbox" name="" id=""></span></li>
+                        </ul>
+                    </div>
+                    <div class="cuisine">
+                        <div class="header">
+                            <h5>Cuisine</h5>
+                            <span onclick="{{this.style.display = 'none'; this.nextElementSibling.style.display = 'block'; }}"><i class="bi bi-caret-up-fill"></i></span>
+                            <span onclick="{{ this.style.display = 'none'; this.previousElementSibling.style.display = 'block'; }}" class="down"><i class="bi bi-caret-down-fill"></i></span>
+                        </div>
+                        <ul>
+                            <li>Local Dish <span><input type="checkbox" name="" id=""></span></li>
+                            <li>International Dish <span><input type="checkbox" name="" id=""></span></li>
+                            <li>Fast Food <span><input type="checkbox" name="" id=""></span></li>
+                            <li>Berverage & Drinks <span><input type="checkbox" name="" id=""></span></li>
+                        </ul>
+                    </div>
+                    <div class="status">
+                        <div class="header">
+                            <h5>Status</h5>
+                            <span onclick="{{this.style.display = 'none'; this.nextElementSibling.style.display = 'block'; }}"><i class="bi bi-caret-up-fill"></i></span>
+                            <span onclick="{{ this.style.display = 'none'; this.previousElementSibling.style.display = 'block'; }}" class="down"><i class="bi bi-caret-down-fill"></i></span>
+                        </div>
+                        <ul>
+                            <li>Online</li>
+                            <li>Offline</li>
+                        </ul>
+                    </div>
+                    <div class="offers">
+                        <div class="header">
+                            <h5>Restaurants Offer</h5>
+                            <span onclick="{{this.style.display = 'none'; this.nextElementSibling.style.display = 'block'; }}"><i class="bi bi-caret-up-fill"></i></span>
+                            <span onclick="{{ this.style.display = 'none'; this.previousElementSibling.style.display = 'block'; }}" class="down"><i class="bi bi-caret-down-fill"></i></span>
+                        </div>
+                        <ul>
+                            <li>10% - 25%</li>
+                            <li>30% - 45%</li>
+                            <li>30% - 45%</li>
+                            <li>50% - 75%</li>
+                            <li>80% - 95%</li>
+                        </ul>
+                    </div>
+                    <div class="time-range">
+                        <h5>Delivery Time Range</h5>
+                        <input type="range" name="" id="">
+                    </div>
+                    <div class="rating">
+                        <div class="header">
+                            <h5>Star Rating</h5>
+                            <span onclick="{{this.style.display = 'none'; this.nextElementSibling.style.display = 'block'; }}"><i class="bi bi-caret-up-fill"></i></span>
+                            <span onclick="{{ this.style.display = 'none'; this.previousElementSibling.style.display = 'block'; }}" class="down"><i class="bi bi-caret-down-fill"></i></span>
+                        </div>
+                        <ul>
+                            <li>1-2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+        
+            <main>
+                <div class="vendor-content-container">
+                    <div class="vendor-header">
+                        <div class="title">
+                            <h4>Food</h4>
+                            <p>Restaurants in your area</p>
+                        </div>
+                        <div class="sort">
+                            <label for="option">Sort by:</label>
+                            <select name="option" id="">
+                                <option value="Popular">Popular</option>
+                                <option value="Featured">Featured</option>
+                                <option value="Food">Food</option>
+                                <option value="Recipes">Recipes</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="vendors-content">
+    
+                        <div class="cateens vendor-1">
+                            <div class="img"></div>
+                            <div class="box cateens-content">
+                                <div class="like"><i class="bi bi-heart"></i></div>
+                                <div class="status">
+                                    <span></span>
+                                    <p>online</p>
+                                </div>
+                                <div class="info">
+                                    <h5 class="name">Fried Rice</h5>
+                                    <p class="desc">Local dish, International dishes, drinks</p>
+                                    <p class="write-up" class="write-up">
+                                        <b>Monette cuisine</b> <br>
+                                        <span>PRICE: ₦2,000</span>
+                                    </p>
+                                </div>
+                                <div class="deliveryDetials">
+                                    <div class="rating">
+                                        <i class="bi bi-star-fill"></i>
+                                        <p>5.0</p>
+                                    </div>
+                                    <div class="time">
+                                        <i class="bi bi-clock"></i>
+                                        <p>15-45min</p>
+                                    </div>
+                                </div>
+                                <div class="button" onclick="AddItemsToCart('vendor-1')"><i class="bi bi-cart4" style="font-size: 20px;color:#ffff"></i> Cart</div>
+                            </div>
+                        </div>
+    
+                        <!--9 -->
+                        <div class="cateens vendor-2">
+                            <div class="img"></div>
+                            <div class="box cateens-content">
+                                <div class="like"><i class="bi bi-heart"></i></div>
+                                <div class="status">
+                                    <span></span>
+                                    <p>online</p>
+                                </div>
+                                <div class="info">
+                                    <h5 class="name">Cake Slice</h5>
+                                    <p class="desc">Desserts, conventionaries</p>
+                                    <p class="write-up" class="write-up">
+                                        <b>Bimmie's Cofe</b> <br>
+                                        <span>PRICE: ₦1,500</span>
+                                    </p>
+                                </div>
+                                <div class="deliveryDetials">
+                                    <div class="rating">
+                                        <i class="bi bi-star-fill"></i>
+                                        <p>5.0</p>
+                                    </div>
+                                    <div class="time">
+                                        <i class="bi bi-clock"></i>
+                                        <p>15-45min</p>
+                                    </div>
+                                </div>
+                                <div class="button" onclick="AddItemsToCart('vendor-2')"><i class="bi bi-cart4" style="font-size: 20px;color:#ffff"></i> Cart</div>
+                            </div>
+                        </div>
+    
+                        <!-- vendor-3 -->
+                        <div class="cateens vendor-3">
+                            <div class="img"></div>
+                            <div class="box cateens-content">
+                                <div class="like"><i class="bi bi-heart"></i></div>
+                                <div class="status">
+                                    <span></span>
+                                    <p>online</p>
+                                </div>
+                                <div class="info">
+                                    <h5 class="name">Spaghetti</h5>
+                                    <p class="desc">Local dish, Internationa dishes</p>
+                                    <p class="write-up" class="write-up">
+                                        <b>Monette cuisine</b> <br>
+                                            <span>PRICE: ₦1,900</span>
+                                    </p>
+                                </div>
+                                <div class="deliveryDetials">
+                                    <div class="rating">
+                                        <i class="bi bi-star-fill"></i>
+                                        <p>5.0</p>
+                                    </div>
+                                    <div class="time">
+                                        <i class="bi bi-clock"></i>
+                                        <p>15-45min</p>
+                                    </div>
+                                </div>
+                                <div class="button" onclick="AddItemsToCart('vendor-3')"><i class="bi bi-cart4" style="font-size: 20px;color:#ffff"></i> Cart</div>
+                            </div>
+                        </div>
+                        
+    
+                        <!-- vendor-4 -->
+                        <div class="cateens vendor-4">
+                            <div class="img"></div>
+                            <div class="box cateens-content">
+                                <div class="like"><i class="bi bi-heart"></i></div>
+                                <div class="status">
+                                    <span></span>
+                                    <p>online</p>
+                                </div>
+                                <div class="info">
+                                    <h5 class="name">Cake Parfeit</h5>
+                                    <p class="desc">Desserts, conventionaries</p>
+                                    <p class="write-up" class="write-up">
+                                        <b>Bimmie's Cofe</b> <br>
+                                            <span>PRICE: ₦1,200</span>
+                                    </p>
+                                </div>
+                                <div class="deliveryDetials">
+                                    <div class="rating">
+                                        <i class="bi bi-star-fill"></i>
+                                        <p>5.0</p>
+                                    </div>
+                                    <div class="time">
+                                        <i class="bi bi-clock"></i>
+                                        <p>15-45min</p>
+                                    </div>
+                                </div>
+                                <div class="button" onclick="AddItemsToCart('vendor-4')"><i class="bi bi-cart4" style="font-size: 20px;color:#ffff"></i> Cart</div>
+                            </div>
+                        </div>
+    
+    
+                        <!-- vendor-5 -->
+                        <div class="cateens vendor-5">
+                            <div class="img"></div>
+                            <div class="box cateens-content">
+                                <div class="like"><i class="bi bi-heart"></i></div>
+                                <div class="status">
+                                    <span></span>
+                                    <p>online</p>
+                                </div>
+                                <div class="info">
+                                    <h5 class="name">Spaghetti</h5>
+                                    <p class="desc">Local dish, International dishes</p>
+                                    <p class="write-up" class="write-up">
+                                        <b>Ochaso Spag</b> <br>
+                                            <span>PRICE: ₦1,700</span>
+                                    </p>
+                                </div>
+                                <div class="deliveryDetials">
+                                    <div class="rating">
+                                        <i class="bi bi-star-fill"></i>
+                                        <p>5.0</p>
+                                    </div>
+                                    <div class="time">
+                                        <i class="bi bi-clock"></i>
+                                        <p>15-45min</p>
+                                    </div>
+                                </div>
+                                <div class="button" onclick="AddItemsToCart('vendor-5')"><i class="bi bi-cart4" style="font-size: 20px;color:#ffff"></i> Cart</div>
+                            </div>
+                        </div>
+    
+    
+                        <!-- vendor-6 -->
+                        <div class="cateens vendor-6">
+                            <div class="img"></div>
+                            <div class="box cateens-content">
+                                <div class="like"><i class="bi bi-heart"></i></div>
+                                <div class="status">
+                                    <span></span>
+                                    <p>online</p>
+                                </div>
+                                <div class="info">
+                                    <h5 class="name">Spaghetti</h5>
+                                    <p class="desc">Ocal dish, International dishes</p>
+                                    <p class="write-up" class="write-up">
+                                        <b>La spag</b> <br>
+                                            <span>PRICE: ₦1,000</span>
+                                    </p>
+                                </div>
+                                <div class="deliveryDetials">
+                                    <div class="rating">
+                                        <i class="bi bi-star-fill"></i>
+                                        <p>5.0</p>
+                                    </div>
+                                    <div class="time">
+                                        <i class="bi bi-clock"></i>
+                                        <p>15-45min</p>
+                                    </div>
+                                </div>
+                                <div class="button" onclick="AddItemsToCart('vendor-6')"><i class="bi bi-cart4" style="font-size: 20px;color:#ffff"></i> Cart</div>
+                            </div>
+                        </div>
+    
+    
+                        <!-- vendor-7 -->
+                        <div class="cateens vendor-7">
+                            <div class="img"></div>
+                            <div class="box cateens-content">
+                                <div class="like"><i class="bi bi-heart"></i></div>
+                                <div class="status">
+                                    <span></span>
+                                    <p>online</p>
+                                </div>
+                                <div class="info">
+                                    <h5 class="name">Ofada Rice</h5>
+                                    <p class="desc">Cuisine, Local dish, International dishes</p>
+                                    <p class="write-up" class="write-up">
+                                        <b>Monette cuisine</b> <br>
+                                            <span>PRICE: ₦2,000</span>
+                                    </p>
+                                </div>
+                                <div class="deliveryDetials">
+                                    <div class="rating">
+                                        <i class="bi bi-star-fill"></i>
+                                        <p>5.0</p>
+                                    </div>
+                                    <div class="time">
+                                        <i class="bi bi-clock"></i>
+                                        <p>15-45min</p>
+                                    </div>
+                                </div>
+                                <div class="button" onclick="AddItemsToCart('vendor-7')"><i class="bi bi-cart4" style="font-size: 20px;color:#ffff"></i> Cart</div>
+                            </div>
+                        </div>
+    
+                        <!-- vendor-8 -->
+                        <div class="cateens vendor-8">
+                            <div class="img"></div>
+                            <div class="box cateens-content">
+                                <div class="like"><i class="bi bi-heart"></i></div>
+                                <div class="status">
+                                    <span></span>
+                                    <p>online</p>
+                                </div>
+                                <div class="info">
+                                    <h5 class="name">Foil Cake (big)</h5>
+                                    <p class="desc">Desserts, Appertizers</p>
+                                    <p class="write-up" class="write-up">
+                                        <b>Bimmie's Cofe</b> <br>
+                                            <span>PRICE: ₦1,500</span>
+                                    </p>
+                                </div>
+                                <div class="deliveryDetials">
+                                    <div class="rating">
+                                        <i class="bi bi-star-fill"></i>
+                                        <p>5.0</p>
+                                    </div>
+                                    <div class="time">
+                                        <i class="bi bi-clock"></i>
+                                        <p>15-45min</p>
+                                    </div>
+                                </div>
+                                <div class="button" onclick="AddItemsToCart('vendor-8')"><i class="bi bi-cart4" style="font-size: 20px;color:#ffff"></i> Cart</div>
+                            </div>
+                        </div>
+                        
+                        <!-- vendor-9 -->
+                        <div class="cateens vendor-9">
+                            <div class="img"></div>
+                            <div class="box cateens-content">
+                                <div class="like"><i class="bi bi-heart"></i></div>
+                                <div class="status">
+                                    <span></span>
+                                    <p>online</p>
+                                </div>
+                                <div class="info">
+                                    <h5 class="name">Pancakes</h5>
+                                    <p class="desc">Fast Food, conventionaries</p>
+                                    <p class="write-up" class="write-up">
+                                        <b>Bimmie's Cofe</b> <br>
+                                            <span>PRICE: ₦700
+     </span>                               </p>
+                                </div>
+                                <div class="deliveryDetials">
+                                    <div class="rating">
+                                        <i class="bi bi-star-fill"></i>
+                                        <p>5.0</p>
+                                    </div>
+                                    <div class="time">
+                                        <i class="bi bi-clock"></i>
+                                        <p>15-45min</p>
+                                    </div>
+                                </div>
+                                <div class="button" onclick="AddItemsToCart('vendor-9')"><i class="bi bi-cart4" style="font-size: 20px;color:#ffff"></i> Cart</div>
+                            </div>
+                        </div>
+    
+                        <!-- vendor-10 -->
+                        <div class="cateens vendor-10">
+                            <div class="img"></div>
+                            <div class="box cateens-content">
+                                <div class="like"><i class="bi bi-heart"></i></div>
+                                <div class="status">
+                                    <span></span>
+                                    <p>online</p>
+                                </div>
+                                <div class="info">
+                                    <h5 class="name">Jollof Rice</h5>
+                                    <p class="desc">Local dish, International dishes</p>
+                                    <p class="write-up" class="write-up">
+                                        <b>Precy Kitchen</b> <br>
+                                            <span>PRICE: ₦1,500</span>
+                                    </p>
+                                </div>
+                                <div class="deliveryDetials">
+                                    <div class="rating">
+                                        <i class="bi bi-star-fill"></i>
+                                        <p>5.0</p>
+                                    </div>
+                                    <div class="time">
+                                        <i class="bi bi-clock"></i>
+                                        <p>15-45min</p>
+                                    </div>
+                                </div>
+                                <div class="button" onclick="AddItemsToCart('vendor-10')"><i class="bi bi-cart4" style="font-size: 20px;color:#ffff"></i> Cart</div>
+                            </div>
+                        </div>
+    
+                        <!-- vendor-11 -->
+                        <div class="cateens vendor-11">
+                            <div class="img"></div>
+                            <div class="box cateens-content">
+                                <div class="like"><i class="bi bi-heart"></i></div>
+                                <div class="status">
+                                    <span></span>
+                                    <p>online</p>
+                                </div>
+                                <div class="info">
+                                    <h5 class="name">Foil Cake (small)</h5>
+                                    <p class="desc">Desserts, conventionaries</p>
+                                    <p class="write-up" class="write-up">
+                                        <b>Bimmie's Cofe</b> <br>
+                                            <span>PRICE: ₦700
+     </span>                               </p>
+                                </div>
+                                <div class="deliveryDetials">
+                                    <div class="rating">
+                                        <i class="bi bi-star-fill"></i>
+                                        <p>5.0</p>
+                                    </div>
+                                    <div class="time">
+                                        <i class="bi bi-clock"></i>
+                                        <p>15-45min</p>
+                                    </div>
+                                </div>
+                                <div class="button" onclick="AddItemsToCart('vendor-11')"><i class="bi bi-cart4" style="font-size: 20px;color:#ffff"></i> Cart</div>
+                            </div>
+                        </div>
+    
+                        <!-- add-user -->
+                        <div class="cateens vendor-12" onclick="{{alert('contact: info.tasteclan@gmail.com')}}">
+                            <div class="img"></div>
+                            <div class="box cateens-content">
+                                <div class="like"><i class="bi bi-heart"></i></div>
+                                <div class="status">
+                                    <span></span>
+                                    <p>online</p>
+                                </div>
+                                <div class="info">
+                                    <h5 class="name">ADD VENDOR FOOD</h5>
+    
+                                </div>
+                                <div class="deliveryDetials">
+                                    <div class="rating">
+                                        <i class="bi bi-star-fill"></i>
+                                        <p>5.0</p>
+                                    </div>
+                                    <div class="time">
+                                        <i class="bi bi-clock"></i>
+                                        <p>15-45min</p>
+                                    </div>
+                                </div>
+                                <div class="button"><i class="bi bi-cart4" style="font-size: 20px;color:#ffff"></i> Cart</div>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </main>
+        </div>
+                
+    </div>
+    </body>
+<%- include ("./partials/scripts") %>

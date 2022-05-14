@@ -1,0 +1,64 @@
+<%- include ("./partials/header") %>
+
+<style>
+    body{
+        display: flex; justify-content: center; align-items: center; height: 100vh;
+        width: 100%;flex-direction: column;
+    }
+
+    form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    input[type=text]{
+        border: 0px;
+        border-bottom: 1px solid black;
+        outline: 0px;
+        padding: 3px;
+        padding-left: 20px;
+        width: 250px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0.25px;
+        text-align: left;
+        color: #282B30;
+        background-color: transparent;
+        }
+    input[type=submit]{
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        margin: 12px 0px;
+        width: 250px;
+        height: 53px;
+        background: #e8e8e8;
+        border-radius: 50px;
+        border: 0px;
+        color: #A8ABB2;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0.25px;
+        text-align: center;
+        color: #282B30;
+        padding: 0px 20px;
+        -webkit-transform: translateX(-60px);
+                transform: translateX(0px);
+        height: 50px;
+        cursor: pointer;
+        background: #FE724E;
+        color: #f9f9f9;
+    }
+</style>
+<body>
+    <form action="">
+        <input type="text" name="order_id" id="" placeholder="Enter order id">
+        <input type="submit" value="Send">
+    </form>
+</body>

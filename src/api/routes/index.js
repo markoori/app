@@ -52,13 +52,21 @@ router.get('/vendors',(req,res)=>{
     res.render('vendors')
 })
 
-// router.get('/food_vendor',(req,res)=>{
-//     info = fetch_food()
-//     res.render('foodsection',{data : {info}})
-// })
+router.get('/driver',(req,res)=>{
+    res.render('driver')
+})
+
+router.get('/verifypay',(req,res)=>{
+    res.render('verifypay')
+})
+
+
+router.get('/terms',(req,res)=>{
+    res.render('terms')
+})
 
 router.get('/order',(req,res)=>{
-    res.render('orderfood')
+    res.render('order')
 })
 
 router.get('/restaurants',(req,res)=>{
