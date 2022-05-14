@@ -7,12 +7,12 @@
             <div class="LoginMain .animate">
                 <div class="screen-1">
                     <div class="welcomeText wel-1">
-                        <h1>Hello Friend!</h1>
+                        <h3>Hello Friend!</h3>
                         <p>Enter your details and start a yummy journey with us</p>
                         <span onclick="swapScreens('LoginMain')">Sign up</span>
                     </div>
                     <div class="welcomeText wel-2">
-                        <h1>Welcome Back!</h1>
+                        <h3>Welcome Back!</h3>
                         <p>To keep connected with us please login into your account</p>
                         <span onclick="swapScreens('LoginMain')">Login</span>
                     </div>
@@ -23,25 +23,25 @@
                 </div>
     
                 <div class="extras logextra-1">
-                    <img src="/img/img/img1.png" alt="extras image">
+                    <img src="../public/img/img/img1.png" alt="extras image">
                 </div>
     
                 <!-- The second screen containing the forms -->
              <div class="screen-2">
-                <div class="logo">
-                    <img src="/img/img/OBJECT.png" alt="">
-                    <div class="back" onclick="{{window.history.back()}}"><i class="bi bi-arrow-left"></i> BACK</div>
-                </div>
+                    <div class="logo">
+                        <img src="../public/img/icons/logos.png" alt="">
+                        <div class="back" onclick="{{window.history.back()}}"><i class="bi bi-arrow-left"></i> &nbsp;  BACK</div>
+                    </div>
                     <div class="form loginForm">
                         <div class="header">
-                            <h1>Welcome Back</h1>
+                            <h3>Welcome Back</h3>
                             <p>Log in to continue</p>
                         </div>
-                        <form action="https://tasteclanflask.herokuapp.com/login" method="post">
-                            <span><img src="/img/icons/Email.png" alt=""></span>
-                            <input type="email" name="email" id="" placeholder="Enter email address" required>
-                            <span><img src="/img/icons/Lock.png" alt=""></span>
-                            <input type="password" name="password" placeholder="Enter password" required>
+                        <form action="http://127.0.0.1:5000/login" method="post">
+                            <span><img src="../public/img/icons/Email.png" alt=""></span>
+                            <input type="email" name="email" id="" placeholder="Enter email address">
+                            <span><img src="../public/img/icons/Lock.png" alt=""></span>
+                            <input type="password" name="password" placeholder="Enter password">
                             <a href=""><p>Forgot Password</p></a>
                             <input type="submit" value="LOG IN">
                         </form>
@@ -50,8 +50,8 @@
                                 <p>OR</p>
                                 <p>log in with</p>
                                 <ul>
-                                    <li><img src="/img/icons/Group 12.png" alt=""></li>
-                                    <li><img src="/img/icons/Group 11.png" alt=""></li>
+                                    <li><img src="../public/img/icons/Group 12.png" alt=""></li>
+                                    <li><img src="../public/img/icons/Group 11.png" alt=""></li>
                                 </ul>
                             </div>
                             <div class="signup">
@@ -62,18 +62,18 @@
     
                     <div class="form signupForm">
                         <div class="header">
-                            <h1>Create New Account</h1>
+                            <h3>Create New Account</h3>
                             <p>Sign up to continue</p>
                         </div>
-                        <form action="https://tasteclanflask.herokuapp.com/signup" method="post">
-                            <span><i class="bi bi-person-circle"></i></span>
+                        <form action="http://127.0.0.1:5000/signup" method="post">
+                            <span><img src="../public/img/icons/User.png" alt=""></span>
                             <input type="text" name="fullname" id="" placeholder="Enter full name" required>
-                            <span><img src="/img/icons/Email.png" alt=""></span>
+                            <span><img src="../public/img/icons/Email.png" alt=""></span>
                             <input type="email" name="email" id="" placeholder="Enter email address" required>
-                            <span><img src="/img/icons/Lock.png" alt=""></span>
+                            <span><img src="../public/img/icons/Lock.png" alt=""></span>
                             <input type="password" name="password" placeholder="Enter password" required>
                             <input type="checkbox" name="checkbox" id="" required>
-                            <label for="checkbox">I agree to TasteClan's terms and conditions</label>
+                            <label for="checkbox">I agree to TasteClan's <a href="/terms">Terms and Conditions</a></label>
                             <input type="submit" value="SIGN UP">
                         </form>
                         <div class="loginOptions-container">
@@ -81,8 +81,8 @@
                                 <p>OR</p>
                                 <p>sign up with</p>
                                 <ul>
-                                    <li><img src="/img/icons/Group 12.png" alt=""></li>
-                                    <li><img src="/img/icons/Group 11.png" alt=""></li>
+                                    <li><img src="../public/img/icons/Group 12.png" alt=""></li>
+                                    <li><img src="../public/img/icons/Group 11.png" alt=""></li>
                                 </ul>
                             </div>
                             <div class="signup">
