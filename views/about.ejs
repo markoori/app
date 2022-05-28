@@ -1,69 +1,18 @@
 <%- include("./partials/header") %>
 <title>About</title>
 </head>
-<nav>
-    <%- include("./partials/menu") %>
-</nav>
+
 
 <body>
 
     <div class="aboutPage">
     
-        <!-- <nav>
-            <div class="mpages">
-                <ul>
-                    <a href="/"><li>Home</li></a>
-                    <i class="bi bi-arrow-down-circle"></i>
-                    <a href="/vendors"><li>Vendors</li></a>
-                    <a href="/blog"><li>Blog</li></a>
-                    <li><a href="/about">About us</a></li>
-                    <a href="/contact"><li>Contact</li></a>
-                </ul>
-            </div>
-            <div class="extras hom-extra-1">
-                <img src="./public/img/img/cssp 1.png" alt="">
-            </div>
-            <header>
-                <div class="logo">
-                    <img src="/img/icons/logo.png" alt="Tc logo">                
-                </div>
-                <div class="hamburger">
-                   <ul>
-                       <li></li>
-                       <li></li>
-                       <li></li>
-                   </ul>
-                </div>
-                <div class="wpages">
-                    <ul>
-                        <a href="/"><li>Home</li></a>
-                        <a href="/vendors"><li>Vendors</li></a>
-                        <a href="/blog"><li>Blog</li></a>
-                        <li><a href="/about">About us</a></li>
-                        <a href="/contact"><li>Contact</li></a>
-                    </ul>
-                </div>
-                <div class="search">
-                    <img src="./public/img/icons/Search.png" alt="">
-                    <input type="text" name="search" id="search" placeholder="search Meal...">
-                </div>
-                <div class="sign-log">
-                    <ul>
-                        <a href="./views/Login.htm" target="_blank"><li class="login">Login</li></a>
-                        <li class="signup"> <span>Sign Up</span></li>
-                    </ul>
-                 
-                </div>
-            </header>
-        </nav> -->
-
+        <nav>
+            <%- include("./partials/menu") %>
+        </nav>
 
         <main>
             <div class="aboutusMain">
-    
-                <div class="extras abtextra-1">
-                    <img src="/img/img/cfjkd 1.png" alt="" srcset="">
-                </div>
     
                 <section>
                     <div class="aboutSection">
@@ -263,9 +212,73 @@
     
             </div>
         </main>
+          
+        <div class="svg">
+            <div class="custom-shape-divider-top-1634610468">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill-footer"></path>
+                </svg>
+            </div>
+        </div>
     
-            
+        <footer>
+    
+            <div class="footer">
+    
+            <div class="footerContent">
+                <div class="logo_social">
+                    <img src="./public/img/icons/logo.png" alt="">
+                    <h4>Healthy Food</h4>
+                    <div class="social">
+                        <ul>
+                            <li><span><i class="bi bi-envelope-fill"></i></span></li>
+                            <li><span><img src="./public/img/icons/instagram-logo.png" alt=""></span></li>
+                            <li><span><img src="./public/img/icons/twitter (1).png" alt=""></span></li>
+                            <li><span><img src="./public/img/icons/facebook-circular-logo.png" alt=""></span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="subscribe">
+                    <h5>Stay Connected with us</h5>
+                    <p>Get more updates on Delicious foods</p>
+                    <form action="">
+                        <input type="email" name="sub-email" id="" placeholder="Enter email">
+                        <input type="submit" value="Subscribe">
+                    </form>
+                </div>
+                <div class="footer-nav-links quick-links">
+                    <h5>Quick Links</h5>
+                    <p>
+                        <a href="/"><li>Home</li></a>
+                        <a href="/vendors"><li>Vendors</li></a>
+                        <a href="/blog"><li>Blog</li></a>
+                        <li><a href="/about">About us</a></li>
+                        <a href="/contact"><li>Contact</li></a>
+                    </p>
+                </div>
+                <div class="footer-nav-links business-links">
+                    <h5>Business</h5>
+                    <p>
+                        <a href="/faq"><li>F.A.Q</li></a>
+                        <a href="/privacy"><li>Privacy and Policy</li></a>
+                        <a href="/terms"><li>Terms and Condtions</li></a>
+                    </p>
+                </div>
+                <div class="footer-nav-links partner-links">
+                    <h5>Partner with Us</h5>
+                    <p>
+                        <a href="/restaurants"><li>For Restaurants</li></a>
+                        <a href="/drivers"><li>For Drivers</li></a>
+                    </p>
+                </div>            
+            </div>
+            <hr>
+            <div class="copy">
+                <p>&copy; copyright. All rights reserved.</p>
+            </div>
+                        
+        </div>
+        </footer>
     </div>
-    <%- include("./partials/footer") %>
     </body>
     <%- include("./partials/scripts") %>

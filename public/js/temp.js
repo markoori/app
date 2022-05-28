@@ -1,20 +1,40 @@
 {
-
-    let add_food_type = []
-    let add_price = []
-    let add_resName =[]
-    let  add_img = []
-    let item_i = ['']
+    let item_i = []
     let count = 0
     let localStore = []
 
+    let add_food_type;
+    let add_price;
+    let add_resName;
+    let  add_img;
 
-
-
+    
     function AddItemsToCart(arg){
+        // params
+    // adding the just add to cart item to localStore
+    if(!localStorage.getItem('foodType')){
+        add_food_type = []
+        add_price = []
+        add_resName = []
+        add_img = []
+    }
+    else{
+        // add_food_type = cart[0]
+        // add_price = cart[1]
+        // add_resName = cart[2]
+        // add_img = cart[3]
+        add_food_type = JSON.parse(localStorage.getItem('foodType'))
+        add_price = JSON.parse(localStorage.getItem('addPrice'))
+        add_resName = JSON.parse(localStorage.getItem('restaurantName'))
+        add_img = JSON.parse(localStorage.getItem('img'))
+    }
+
             // helper function
     function addItem(){
+        // incrementing the cart icon number
+        let count = parseInt($('.users-info a span').text())
         $('.users-info a span').text(`${count += 1}`)
+
         // add items to virtual cart
         add_food_type.push(`${ $(`.${arg} .info h5`).text() }`);
         add_price.push( `${ ($(`.${arg} .info .write-up span`).text())
@@ -23,21 +43,31 @@
         .text().length ) }` );
         add_resName.push(`${ $(`.${arg} .info .write-up b`).text() }`)
         let get_img = window.getComputedStyle(document.querySelector(`.${arg} .img`)).getPropertyValue('background');
-        console.log(get_img)
         add_img.push(get_img)
 
+        // store the food details in a temp cache
+        localStorage.setItem('foodType', JSON.stringify(add_food_type))
+        localStorage.setItem('addPrice', JSON.stringify(add_price))
+        localStorage.setItem('restaurantName',JSON.stringify(add_resName))
+        localStorage.setItem('img', JSON.stringify(add_img))
+        if(localStorage.getItem('foodType')){ 
+
+        }
+
         item_i = [add_food_type,add_resName,add_price,add_img]
-        console.log("Item i: " + item_i)
+        console.log("\nItem i: " + item_i)
 
+        console.log("\nGet store: " + JSON.parse(window.localStorage.getItem('cart-list')))
     // window.localStorage.setItem('cart-list',item_i)
+        let storage = JSON.parse(window.localStorage.getItem('cart-list'))
 
-        let storage = JSON.parse(localStorage.getItem('cart-list'))
+        //storage = JSON.parse(localStorage.getItem('cart-list'))
         storage.push(item_i)
-        localStorage.setItem('cart-list', JSON.stringify(storage))
+        window.localStorage.setItem('cart-list', JSON.stringify(storage))
     }
     // end
 
-        if (localStorage.getItem('cart-list') == null){
+        if (!localStorage.getItem('cart-list')){
             localStorage.setItem('cart-list', '[]')
         }
         
@@ -68,23 +98,9 @@
                 }
             }
         }
-
-
     }
 
 }
-
-{
-
-    
-
-}
-
-
-
-    //localStorage.clear()
-        //== already defined functions...
-
         function cartCalc(arg) {
             function adder() {
                 // updating the total and subtotal
@@ -92,13 +108,9 @@
                 var adder = 0;
                 var summer;
                 document.querySelectorAll('.item .total span').forEach(function (element) {
-                    if (formater(element.innerHTML) == null) {
-                        summer = 0;
-                    }
-                    else {
-                        summer = formater(element.innerHTML);
-                    }
-                    ;
+                    if (formater(element.innerHTML) == null) { summer = 0; }
+                    else { summer = formater(element.innerHTML); }
+        
                     adder += summer;
                 });
                 if (adder >= 100000)
@@ -130,19 +142,22 @@
         function removeItem(arg,foodName,resName){
             // call the cartCalc function to update the price in the subtotal
            // cartCalc();
+           
            // relaod page
            location.reload()
-            //console.log(foodName,resName);
-            //console.log("first: " + window.localStorage.getItem('cart-list'))
+
+            // get stores
             let cart_items = JSON.parse(window.localStorage.getItem('cart-list'))
-            //console.log("second: " + cart_items[cart_items.length - 1])
-            //let cart_items = window.localStorage.getItem('cart-list')
-    
+            let food_type = JSON.parse(localStorage.getItem('foodType'))
+
+            // actions
+            console.log(food_type)
             $(`.${arg}`).css('display','none');
             let itemNumber = document.querySelector('.page-1 header .header #items');
             
-            itemNumber.innerHTML = `${parseInt(itemNumber.innerHTML.replace(" ITEMS", "")) - 1} ITEMS`
-            console.log(itemNumber)
+            //itemNumber.innerHTML = `${parseInt(itemNumber.innerHTML.replace(" ITEMS", "")) - 1} ITEMS`
+            itemNumber.innerHTML = `${cartItemLength()} ITEMS`
+
             //console.log(JSON.parse(cart_items[cart_items.length - 1][0].toString()))
             let counter = 0
             for ( let items in cart_items[cart_items.length - 1][0]){
@@ -154,18 +169,22 @@
                     delete cart_items[cart_items.length - 1][item + 1][counter]
                     delete cart_items[cart_items.length - 1][item + 2][counter]
                     delete cart_items[cart_items.length - 1][item + 3][counter]
+                    // delete the temp store too
+                    delete food_type[counter]
+
                 }
                 else{
                     counter++;
                     continue
                 }
-                
             }
             //   getStore = JSON.parse(window.localStorage.getItem('cart-list'))
             //   getStore = []
               
+            // update store
               window.localStorage.setItem('cart-list',JSON.stringify(cart_items))
-              console.log(cart_items)
+              localStorage.setItem('foodType', JSON.stringify(food_type))
+              
         }
         // function Delete(arg) {
         //     $("." + arg).css('display', 'none');
@@ -182,11 +201,13 @@
                 cart[2].forEach(function (e) {
                     update_price.push(e);
                 });
+
+                return update_price
             }
         
             copy_price() // copy the price of all the items
         
-            function _store_price_updater(arg, price) { // update the new price if the no_ of plates increase
+            function _store_price_updater(arg, price) { // update the new price if the number of plates increase
                 // formating input
                 console.log(arg)
                 if(arg != undefined){
@@ -208,11 +229,6 @@
 }
 
 { // namespace 3 (Creating the html element to be rendered)
-
-    console.log((window.localStorage.getItem('cart-list')))
-
-    // creating an item list
-
     let item_listings = []; var div_details_h5; var div_details_p;
 
     function empty_checker(checker){
@@ -233,10 +249,9 @@
         let cart_items = JSON.parse(window.localStorage.getItem('cart-list'))
         //console.log(cart_items[cart_items.length - 1])
 
-
         // update the number of items
         let itemNumber = document.querySelector('.page-1 header .header #items');
-        itemNumber.innerHTML = `${cart_items[cart_items.length - 1][0].length} ITEMS`
+        itemNumber.innerHTML = `${cartItemLength()} ITEMS`
 
         let cart_table = document.querySelector('.ShoppingCart-Page .page-1 .item');
         let counter = 0;
@@ -362,27 +377,68 @@
 }
 
 {
+    function generateid(len = 4){
+        let numbers = "01233456789"
+        let counter = 0
+        let id = ""
+        while(counter <= len){
+            id += numbers[Math.floor((Math.random() * 9) + 1)]
+            counter++
+        }
+        return id
+    }
+    console.log(generateid())
+}
+
+{
 
     function addOrderListToForm(){
         let cart_items = JSON.parse(window.localStorage.getItem('cart-list'))
         let cart = cart_items[cart_items.length - 1]
+
+        let update_price = copy_price()
         // update the price list
         for (i in cart[2]){
             if (cart[2][i] == null){
                 update_price[i] = null
             }
+            else{
+                update_price[i] = (update_price[i]).replace('₦', '').replace(',', '')
+            }
         }
+
+        // delete imgs
+        delete cart[3]
         // insert the updated price
         cart[2] = update_price
 
-        document.querySelector('.CheckOutPage #form input[name="orderList"]').value = cart;
-    }
 
+        ocument.querySelector('.CheckOutPage #form input[name="orderList"]').value = [locastStorage.getItem('orderId'), cart];
+    }
 }
 
+{
+    function cartItemLength(){
+        let cart_items = JSON.parse(window.localStorage.getItem('cart-list'))
+        let getLastItems =  cart_items[cart_items.length - 1]
+        var counter = 0;
 
+        console.log(getLastItems[0])
+        // using the first item on the cart (food type) to check if the food  is deleted
+        for (let item of getLastItems[0]){
+            if(item != null){
+                counter++
+            }
+            else{ continue }
+        }
 
+        return counter
+    }
 
-
-
-
+    function isLocalStorage(params){
+        if(localStorage.getItem(params) == null){
+            return false
+        }
+        return true
+    }
+}

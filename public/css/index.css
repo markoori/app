@@ -129,6 +129,10 @@ li {
   list-style: none;
 }
 
+nav {
+  margin-top: 50px;
+}
+
 button {
   outline: 0px;
   border: 0px;
@@ -358,7 +362,7 @@ nav header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 15px;
+  margin-top: 0px;
   z-index: 80;
 }
 
@@ -516,6 +520,10 @@ nav header .sign-log .signup span a {
   color: #f9f9f9;
 }
 
+nav header .sign-log .signup span a {
+  color: #f9f9f9;
+}
+
 nav header .sign-log .signup span:hover {
   background: transparent;
   color: #FFC42B;
@@ -532,7 +540,7 @@ nav header .sign-log .signup span:hover {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
-    padding-top: 30px;
+    padding-top: 0px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -624,7 +632,7 @@ nav header .sign-log .signup span:hover {
   letter-spacing: 0px;
   text-align: left;
   color: #282B30;
-  font-size: calc(35px + 2.1vw);
+  font-size: calc(15px + 2.1vw);
   color: #FFC42B;
 }
 
@@ -763,6 +771,10 @@ nav header .sign-log .signup span:hover {
   transition: .4s;
 }
 
+.HomePage main section .explore main .text span a {
+  color: #f9f9f9;
+}
+
 .HomePage main section .explore main .text span:hover {
   background-color: transparent;
   color: #FE724E;
@@ -770,6 +782,10 @@ nav header .sign-log .signup span:hover {
   padding: 13px 48px;
   outline: 0px;
   border-radius: 50px;
+}
+
+.HomePage main section .explore main .text span:hover a {
+  color: #FE724E;
 }
 
 @media screen and (max-width: 990px) {
@@ -1143,10 +1159,6 @@ nav header .sign-log .signup span:hover {
   margin-top: 130px;
 }
 
-.HomePage main section .aboutSection a {
-  color: #f9f9f9;
-}
-
 .HomePage main section .aboutSection .img img {
   width: calc(350px + 2.5vw);
   height: auto;
@@ -1215,6 +1227,7 @@ nav header .sign-log .signup span:hover {
   text-align: left;
   color: #282B30;
   height: auto;
+  margin-bottom: 28px;
 }
 
 .HomePage main section .aboutSection .text span {
@@ -1232,6 +1245,10 @@ nav header .sign-log .signup span:hover {
   text-align: center;
 }
 
+.HomePage main section .aboutSection .text span a {
+  color: #f9f9f9;
+}
+
 .HomePage main section .aboutSection .text span:hover {
   background-color: transparent;
   color: #FE724E;
@@ -1239,6 +1256,10 @@ nav header .sign-log .signup span:hover {
   padding: 13px 48px;
   outline: 0px;
   border-radius: 50px;
+}
+
+.HomePage main section .aboutSection .text span:hover a {
+  color: #FE724E;
 }
 
 @media screen and (max-width: 990px) {
@@ -1772,6 +1793,14 @@ nav header .sign-log .signup span:hover {
   text-align: center;
 }
 
+.HomePage main section .quickPickSection .cateens-container .cateens .cateens-content .button a {
+  color: #f9f9f9;
+}
+
+.HomePage main section .quickPickSection .cateens-container .cateens .cateens-content .button a {
+  color: #f9f9f9;
+}
+
 .HomePage main section .quickPickSection .loadButton {
   font-family: Open Sans;
   font-size: 14px;
@@ -1785,9 +1814,16 @@ nav header .sign-log .signup span:hover {
   color: #f9f9f9;
   cursor: pointer;
   text-align: center;
-  width: auto;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 300px;
   text-align: center;
   margin-top: 30px;
+}
+
+.HomePage main section .quickPickSection .loadButton a {
+  color: #f9f9f9;
 }
 
 .HomePage main section .quickPickSection .loadButton .bi {
@@ -1801,6 +1837,10 @@ nav header .sign-log .signup span:hover {
   padding: 13px 48px;
   outline: 0px;
   border-radius: 50px;
+}
+
+.HomePage main section .quickPickSection .loadButton:hover a {
+  color: #FE724E;
 }
 
 .HomePage main section .quickPickSection .loadButton:hover .bi {
@@ -1822,6 +1862,9 @@ nav header .sign-log .signup span:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .HomePage main section .quickPickSection .loadButton {
+    width: auto;
   }
 }
 
@@ -2087,6 +2130,10 @@ nav header .sign-log .signup span:hover {
   text-align: center;
 }
 
+.HomePage main section .partnership .content .button a {
+  color: #f9f9f9;
+}
+
 .HomePage main section .partnership .content .button:hover {
   background-color: transparent;
   color: #FE724E;
@@ -2095,6 +2142,10 @@ nav header .sign-log .signup span:hover {
   outline: 0px;
   border-radius: 50px;
   font-weight: bold;
+}
+
+.HomePage main section .partnership .content .button:hover a {
+  color: #FE724E;
 }
 
 .HomePage main section .partnership .content .hom-extra-10 {
@@ -2109,278 +2160,6 @@ nav header .sign-log .signup span:hover {
   }
   .HomePage main section .partnership .content .hom-extra-10 img {
     width: 50px;
-  }
-}
-
-.HomePage footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  min-height: 100%;
-}
-
-.HomePage footer .footer {
-  margin-top: 0px;
-  background: #f9f9f9;
-  width: 100%;
-  padding: 230px 30px 4px 30px;
-}
-
-.HomePage footer .footer .footerContent {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.HomePage footer .footer .footerContent .logo_social {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.HomePage footer .footer .footerContent .logo_social img {
-  width: 100px;
-  height: auto;
-}
-
-.HomePage footer .footer .footerContent .logo_social h4 {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 25px;
-  letter-spacing: 0px;
-  text-align: left;
-  color: #282B30;
-  font-size: 22px;
-}
-
-.HomePage footer .footer .footerContent .logo_social .social {
-  -webkit-transform: translateX(-50px);
-          transform: translateX(-50px);
-}
-
-.HomePage footer .footer .footerContent .logo_social .social ul li {
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  background-color: #f9f9f9;
-  margin: 20px;
-  cursor: pointer;
-  -webkit-box-shadow: 0px 6px 26px rgba(75, 0, 0, 0.12);
-          box-shadow: 0px 6px 26px rgba(75, 0, 0, 0.12);
-  float: left;
-  margin: 3px;
-}
-
-.HomePage footer .footer .footerContent .logo_social .social ul li span {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  min-height: 100%;
-}
-
-.HomePage footer .footer .footerContent .logo_social .social ul li span .bi {
-  color: #282B30;
-}
-
-.HomePage footer .footer .footerContent .logo_social .social ul li img {
-  width: 20px;
-  height: 20px;
-}
-
-.HomePage footer .footer .footerContent .subscribe h5 {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 22px;
-  letter-spacing: 0.15000000596046448px;
-  text-align: left;
-  color: #282B30;
-}
-
-.HomePage footer .footer .footerContent .subscribe p {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 21px;
-  letter-spacing: 0.5px;
-  text-align: left;
-  color: #282B30;
-}
-
-.HomePage footer .footer .footerContent .subscribe form {
-  max-width: 380px;
-}
-
-.HomePage footer .footer .footerContent .subscribe form input[type=email] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 12px;
-  width: 350px;
-  height: 53px;
-  background: #e8e8e8;
-  border-radius: 50px;
-  border: 0px;
-  color: #A8ABB2;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0.25px;
-  text-align: left;
-  color: #282B30;
-  padding: 0px 20px;
-  max-width: 55%;
-  height: 50px;
-  margin: 0px;
-}
-
-.HomePage footer .footer .footerContent .subscribe form input[type=email]:focus {
-  outline: 0px;
-}
-
-.HomePage footer .footer .footerContent .subscribe form input[type=submit] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 12px;
-  width: 350px;
-  height: 53px;
-  background: #e8e8e8;
-  border-radius: 50px;
-  border: 0px;
-  color: #A8ABB2;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0.25px;
-  text-align: left;
-  color: #282B30;
-  padding: 0px 20px;
-  -webkit-transform: translateX(-60px);
-          transform: translateX(-60px);
-  max-width: 35%;
-  height: 50px;
-  cursor: pointer;
-  background: #FE724E;
-  color: #f9f9f9;
-}
-
-.HomePage footer .footer .footerContent .subscribe form input[type=submit]:focus {
-  outline: 0px;
-}
-
-.HomePage footer .footer .footerContent .quick-links h5, .HomePage footer .footer .footerContent .business-links h5, .HomePage footer .footer .footerContent .partner-links h5 {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 22px;
-  letter-spacing: 0.15000000596046448px;
-  text-align: left;
-  color: #282B30;
-}
-
-.HomePage footer .footer .footerContent .quick-links li, .HomePage footer .footer .footerContent .business-links li, .HomePage footer .footer .footerContent .partner-links li {
-  margin: 14px 0px;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 23px;
-  letter-spacing: 0px;
-  text-align: left;
-  color: #282B30;
-}
-
-.HomePage footer .footer .copy {
-  margin: auto;
-}
-
-.HomePage footer .footer .copy p {
-  text-align: center;
-}
-
-@media (max-width: 800px) {
-  .HomePage footer .footer .footerContent {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
-  }
-  .HomePage footer .footer .footerContent .logo_social {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .HomePage footer .footer .footerContent .logo_social .social {
-    -webkit-transform: translateX(-22px);
-            transform: translateX(-22px);
-  }
-  .HomePage footer .footer .footerContent .subscribe {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .HomePage footer .footer .footerContent .subscribe form {
-    -webkit-transform: translateX(40px);
-            transform: translateX(40px);
-  }
-  .HomePage footer .footer .footerContent .quick-links p, .HomePage footer .footer .footerContent .quick-links h3, .HomePage footer .footer .footerContent .business-links p, .HomePage footer .footer .footerContent .business-links h3, .HomePage footer .footer .footerContent .partner-links p, .HomePage footer .footer .footerContent .partner-links h3 {
-    line-height: 2px;
-    text-align: center;
-  }
-  .HomePage footer .footer .footerContent .quick-links li, .HomePage footer .footer .footerContent .business-links li, .HomePage footer .footer .footerContent .partner-links li {
-    text-align: center;
   }
 }
 
@@ -2874,6 +2653,277 @@ nav header .sign-log .signup span:hover {
   }
 }
 
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100%;
+}
+
+footer .footer {
+  margin-top: 0px;
+  background: #f9f9f9;
+  width: 100%;
+  padding: 230px 30px 4px 30px;
+}
+
+footer .footer .footerContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer .footer .footerContent .logo_social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .footer .footerContent .logo_social .bi {
+  font-size: 21px;
+}
+
+footer .footer .footerContent .logo_social h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #282B30;
+  font-size: 22px;
+}
+
+footer .footer .footerContent .logo_social .social {
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+}
+
+footer .footer .footerContent .logo_social .social ul li {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #f9f9f9;
+  margin: 20px;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 6px 26px rgba(75, 0, 0, 0.12);
+          box-shadow: 0px 6px 26px rgba(75, 0, 0, 0.12);
+  float: left;
+  margin: 3px;
+}
+
+footer .footer .footerContent .logo_social .social ul li span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100%;
+}
+
+footer .footer .footerContent .logo_social .social ul li span .bi {
+  color: #282B30;
+}
+
+footer .footer .footerContent .logo_social .social ul li img {
+  width: 20px;
+  height: 20px;
+}
+
+footer .footer .footerContent .subscribe h5 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0.15000000596046448px;
+  text-align: left;
+  color: #282B30;
+}
+
+footer .footer .footerContent .subscribe p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #282B30;
+}
+
+footer .footer .footerContent .subscribe form {
+  max-width: 380px;
+}
+
+footer .footer .footerContent .subscribe form input[type=email] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 12px;
+  width: 350px;
+  height: 53px;
+  background: #e8e8e8;
+  border-radius: 50px;
+  border: 0px;
+  color: #A8ABB2;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  text-align: left;
+  color: #282B30;
+  padding: 0px 20px;
+  max-width: 55%;
+  height: 50px;
+  margin: 0px;
+}
+
+footer .footer .footerContent .subscribe form input[type=email]:focus {
+  outline: 0px;
+}
+
+footer .footer .footerContent .subscribe form input[type=submit] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 12px;
+  width: 350px;
+  height: 53px;
+  background: #e8e8e8;
+  border-radius: 50px;
+  border: 0px;
+  color: #A8ABB2;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  text-align: left;
+  color: #282B30;
+  padding: 0px 20px;
+  -webkit-transform: translateX(-60px);
+          transform: translateX(-60px);
+  max-width: 35%;
+  height: 50px;
+  cursor: pointer;
+  background: #FE724E;
+  color: #f9f9f9;
+}
+
+footer .footer .footerContent .subscribe form input[type=submit]:focus {
+  outline: 0px;
+}
+
+footer .footer .footerContent .quick-links h5, footer .footer .footerContent .business-links h5, footer .footer .footerContent .partner-links h5 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0.15000000596046448px;
+  text-align: left;
+  color: #282B30;
+}
+
+footer .footer .footerContent .quick-links li, footer .footer .footerContent .business-links li, footer .footer .footerContent .partner-links li {
+  margin: 14px 0px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #282B30;
+}
+
+footer .footer .copy {
+  margin: auto;
+}
+
+footer .footer .copy p {
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  footer .footer .footerContent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+  footer .footer .footerContent .logo_social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .footer .footerContent .logo_social .social {
+    -webkit-transform: translateX(-22px);
+            transform: translateX(-22px);
+  }
+  footer .footer .footerContent .subscribe {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .footer .footerContent .subscribe form {
+    -webkit-transform: translateX(40px);
+            transform: translateX(40px);
+  }
+  footer .footer .footerContent .footer-nav-links p, footer .footer .footerContent .footer-nav-links h5 {
+    line-height: 2px;
+    text-align: center;
+  }
+  footer .footer .footerContent .footer-nav-links li {
+    text-align: center;
+  }
+}
+
 /* About Page Styling*/
 .aboutPage nav .mpages {
   display: none;
@@ -2935,7 +2985,7 @@ nav header .sign-log .signup span:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 15px;
+  margin-top: 0px;
   z-index: 80;
 }
 
@@ -3093,6 +3143,10 @@ nav header .sign-log .signup span:hover {
   color: #f9f9f9;
 }
 
+.aboutPage nav header .sign-log .signup span a {
+  color: #f9f9f9;
+}
+
 .aboutPage nav header .sign-log .signup span:hover {
   background: transparent;
   color: #FFC42B;
@@ -3109,7 +3163,7 @@ nav header .sign-log .signup span:hover {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
-    padding-top: 30px;
+    padding-top: 0px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -3231,7 +3285,7 @@ nav header .sign-log .signup span:hover {
 }
 
 @media screen and (max-width: 600px) {
-  .aboutPage .aboutusMain .abtextra-3 {
+  .aboutPage .aboutusMain .abtextra-1, .aboutPage .aboutusMain .abtextra-3 {
     display: none;
   }
 }
@@ -3271,6 +3325,23 @@ nav header .sign-log .signup span:hover {
         -ms-flex-order: 2;
             order: 2;
     margin-left: 0px;
+  }
+  .aboutPage .aboutusMain section .aboutSection .aboutusContent h4, .aboutPage .aboutusMain section .aboutSection .aboutusContent h3, .aboutPage .aboutusMain section .aboutSection .aboutusContent p {
+    text-align: center;
+  }
+  .aboutPage .aboutusMain section .aboutSection .aboutusContent h4 {
+    position: relative;
+    display: block;
+    padding-bottom: 8px;
+  }
+  .aboutPage .aboutusMain section .aboutSection .aboutusContent h4::after {
+    content: '';
+    width: 60px;
+    height: 3.4px;
+    position: absolute;
+    background-color: #FE724E;
+    left: 35%;
+    bottom: 0;
   }
   .aboutPage .aboutusMain section .aboutSection .abtsectionimg {
     -webkit-box-ordinal-group: 2;
@@ -3331,12 +3402,9 @@ nav header .sign-log .signup span:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -3348,18 +3416,17 @@ nav header .sign-log .signup span:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 20px;
-          column-gap: 20px;
-  row-gap: 20px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   width: 700px;
+  gap: 20px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
 .aboutPage .aboutusMain section .ourStorySection .ourStory-Content .videos-container img:nth-child(1), .aboutPage .aboutusMain section .ourStorySection .ourStory-Content .videos-container :nth-child(2) {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-item-align: end;
       align-self: flex-end;
   -webkit-box-pack: center;
@@ -3368,9 +3435,6 @@ nav header .sign-log .signup span:hover {
 }
 
 .aboutPage .aboutusMain section .ourStorySection .ourStory-Content .videos-container img:nth-child(3), .aboutPage .aboutusMain section .ourStorySection .ourStory-Content .videos-container :nth-child(4) {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-item-align: start;
       align-self: flex-start;
   -webkit-box-pack: center;
@@ -3379,15 +3443,14 @@ nav header .sign-log .signup span:hover {
 }
 
 .aboutPage .aboutusMain section .ourStorySection .ourStory-Content .videos-container img {
-  width: calc(130px + 13.3vw);
   cursor: pointer;
   -webkit-transition: .5s;
   transition: .5s;
 }
 
 .aboutPage .aboutusMain section .ourStorySection .ourStory-Content .videos-container img:hover {
-  -webkit-filter: blur(2px);
-          filter: blur(2px);
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
 }
 
 .aboutPage .aboutusMain section .ourStorySection .ourStory-Content .line img {
@@ -3398,10 +3461,11 @@ nav header .sign-log .signup span:hover {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  margin-left: 10px;
 }
 
 .aboutPage .aboutusMain section .ourStorySection .ourStory-Content .text-container .text {
-  padding: 2px 6px;
+  padding: 12px 20px;
 }
 
 .aboutPage .aboutusMain section .ourStorySection .ourStory-Content .text-container .text h6 {
@@ -3430,14 +3494,43 @@ nav header .sign-log .signup span:hover {
 }
 
 @media screen and (max-width: 900px) {
-  .aboutPage .aboutusMain section .line img {
+  .aboutPage .aboutusMain section .ourStorySection .line img {
     display: none;
   }
 }
 
-@media screen and (max-width: 400px) {
-  .aboutPage .aboutusMain section .videos-container img {
-    width: 100px;
+@media screen and (max-width: 450px) {
+  .aboutPage .aboutusMain section .ourStorySection {
+    padding: 30px;
+  }
+  .aboutPage .aboutusMain section .ourStorySection .videos-container {
+    padding: 0px calc(60px + 2.5vw);
+    -webkit-transform: translateX(calc(-10px + 2vw));
+            transform: translateX(calc(-10px + 2vw));
+  }
+  .aboutPage .aboutusMain section .ourStorySection .videos-container img {
+    width: calc(120px + 22vw);
+  }
+  .aboutPage .aboutusMain section .ourStorySection .header {
+    padding: 0px 70px;
+  }
+  .aboutPage .aboutusMain section .ourStorySection .header h4 {
+    text-align: center;
+  }
+  .aboutPage .aboutusMain section .ourStorySection .ourStory-Content {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .aboutPage .aboutusMain section .ourStorySection .ourStory-Content .text-container {
+    margin-top: 40px;
+    margin-left: 0px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .aboutPage .aboutusMain section .ourStorySection .ourStory-Content .text-container .text h6, .aboutPage .aboutusMain section .ourStorySection .ourStory-Content .text-container .text p {
+    text-align: center;
   }
 }
 
@@ -3789,6 +3882,232 @@ nav header .sign-log .signup span:hover {
   width: 300px;
 }
 
+.aboutPage .aboutusMain footer footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100%;
+}
+
+.aboutPage .aboutusMain footer footer .footer {
+  margin-top: 0px;
+  background: #f9f9f9;
+  width: 100%;
+  padding: 230px 30px 4px 30px;
+}
+
+.aboutPage .aboutusMain footer footer .footer .footerContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.aboutPage .aboutusMain footer footer .footer .footerContent .logo_social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.aboutPage .aboutusMain footer footer .footer .footerContent .logo_social img {
+  width: 80px;
+  height: auto;
+}
+
+.aboutPage .aboutusMain footer footer .footer .footerContent .logo_social .social {
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+}
+
+.aboutPage .aboutusMain footer footer .footer .footerContent .logo_social .social ul li {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #f9f9f9;
+  margin: 20px;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 6px 26px rgba(75, 0, 0, 0.12);
+          box-shadow: 0px 6px 26px rgba(75, 0, 0, 0.12);
+  float: left;
+  margin: 3px;
+}
+
+.aboutPage .aboutusMain footer footer .footer .footerContent .logo_social .social ul li span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100%;
+}
+
+.aboutPage .aboutusMain footer footer .footer .footerContent .logo_social .social ul li span .bi {
+  color: #282B30;
+}
+
+.aboutPage .aboutusMain footer footer .footer .footerContent .logo_social .social ul li img {
+  width: 20px;
+  height: 20px;
+}
+
+.aboutPage .aboutusMain footer footer .footer .footerContent .subscribe form input[type=email] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 12px;
+  width: 350px;
+  height: 53px;
+  background: #e8e8e8;
+  border-radius: 50px;
+  border: 0px;
+  color: #A8ABB2;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  text-align: left;
+  color: #282B30;
+  padding: 0px 20px;
+  width: 250px;
+  height: 50px;
+  margin: 0px;
+}
+
+.aboutPage .aboutusMain footer footer .footer .footerContent .subscribe form input[type=email]:focus {
+  outline: 0px;
+}
+
+.aboutPage .aboutusMain footer footer .footer .footerContent .subscribe form input[type=submit] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 12px;
+  width: 350px;
+  height: 53px;
+  background: #e8e8e8;
+  border-radius: 50px;
+  border: 0px;
+  color: #A8ABB2;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  text-align: left;
+  color: #282B30;
+  padding: 0px 20px;
+  -webkit-transform: translateX(-60px);
+          transform: translateX(-60px);
+  width: 130px;
+  height: 50px;
+  cursor: pointer;
+  background: #FE724E;
+  color: #f9f9f9;
+}
+
+.aboutPage .aboutusMain footer footer .footer .footerContent .subscribe form input[type=submit]:focus {
+  outline: 0px;
+}
+
+.aboutPage .aboutusMain footer footer .footer .footerContent .quick-links li, .aboutPage .aboutusMain footer footer .footer .footerContent .business-links li, .aboutPage .aboutusMain footer footer .footer .footerContent .partner-links li {
+  margin: 14px 0px;
+}
+
+.aboutPage .aboutusMain footer footer .footer .copy {
+  margin: auto;
+}
+
+.aboutPage .aboutusMain footer footer .footer .copy p {
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .aboutPage .aboutusMain footer footer .footer .footerContent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+  .aboutPage .aboutusMain footer footer .footer .footerContent .logo_social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .aboutPage .aboutusMain footer footer .footer .footerContent .logo_social .social {
+    -webkit-transform: translateX(-22px);
+            transform: translateX(-22px);
+  }
+  .aboutPage .aboutusMain footer footer .footer .footerContent .subscribe {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .aboutPage .aboutusMain footer footer .footer .footerContent .subscribe form {
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  .aboutPage .aboutusMain footer footer .footer .footerContent .quick-links p, .aboutPage .aboutusMain footer footer .footer .footerContent .quick-links h3, .aboutPage .aboutusMain footer footer .footer .footerContent .business-links p, .aboutPage .aboutusMain footer footer .footer .footerContent .business-links h3, .aboutPage .aboutusMain footer footer .footer .footerContent .partner-links p, .aboutPage .aboutusMain footer footer .footer .footerContent .partner-links h3 {
+    line-height: 2px;
+    text-align: center;
+  }
+  .aboutPage .aboutusMain footer footer .footer .footerContent .quick-links li, .aboutPage .aboutusMain footer footer .footer .footerContent .business-links li, .aboutPage .aboutusMain footer footer .footer .footerContent .partner-links li {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .aboutPage {
+    padding: 0px 2px;
+  }
+}
+
 /* End of About Page Styling*/
 /* The Login Page Styling */
 * {
@@ -3878,6 +4197,10 @@ nav header .sign-log .signup span:hover {
   display: block;
   margin: 5px auto;
   width: 100px;
+}
+
+.LoginMain .screen-1 .welcomeText span a {
+  color: #f9f9f9;
 }
 
 .LoginMain .screen-1 .welcomeText span:hover {
@@ -4034,6 +4357,10 @@ nav header .sign-log .signup span:hover {
   text-align: center;
 }
 
+.LoginMain .screen-2 .form form input[type=submit] a {
+  color: #f9f9f9;
+}
+
 .LoginMain .screen-2 .form form input[type=checkbox] {
   width: 50px;
   height: auto;
@@ -4184,23 +4511,29 @@ nav header .sign-log .signup span:hover {
   .LoginMain .screen-1, .LoginMain .logextra-1 {
     display: none;
   }
-  .LoginMain .screen-2 .logo {
-    left: 0px;
-    position: relative;
-    width: 95%;
-    top: 5px;
-    margin: 0px 8px 30px 8px;
-  }
-  .LoginMain .screen-2 .logo img {
-    width: 35px;
-  }
   .LoginMain .screen-2 {
     background: url("../img/img/loginimg.png") no-repeat;
     width: 100%;
     color: #f9f9f9;
   }
+  .LoginMain .screen-2 .logo {
+    left: 0px;
+    position: relative;
+    width: 95%;
+    top: 5px;
+    margin: 0px 38px 30px 38px;
+  }
+  .LoginMain .screen-2 .logo img {
+    width: 35px;
+  }
   .LoginMain .screen-2 .form {
     max-width: 90%;
+  }
+  .LoginMain .screen-2 .form .header h3, .LoginMain .screen-2 .form .header p {
+    color: #f9f9f9;
+  }
+  .LoginMain .screen-2 .form form label[for=checkbox] {
+    color: #f9f9f9;
   }
   .LoginMain .screen-2 .form form span {
     -webkit-transform: translate(20px, 16px);
@@ -4210,6 +4543,7 @@ nav header .sign-log .signup span:hover {
     display: block;
     margin-right: auto;
     margin-left: auto;
+    width: 100%;
   }
   .LoginMain .screen-2 .form form input[type=submit] {
     width: 100%;
@@ -4278,7 +4612,7 @@ nav header .sign-log .signup span:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 15px;
+  margin-top: 0px;
   z-index: 80;
 }
 
@@ -4436,6 +4770,10 @@ nav header .sign-log .signup span:hover {
   color: #f9f9f9;
 }
 
+.ContactPages .header header .sign-log .signup span a {
+  color: #f9f9f9;
+}
+
 .ContactPages .header header .sign-log .signup span:hover {
   background: transparent;
   color: #FFC42B;
@@ -4452,7 +4790,7 @@ nav header .sign-log .signup span:hover {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
-    padding-top: 30px;
+    padding-top: 0px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -4513,8 +4851,8 @@ nav header .sign-log .signup span:hover {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   height: 70vh;
-  -webkit-column-gap: 120px;
-          column-gap: 120px;
+  -webkit-column-gap: 320px;
+          column-gap: 320px;
 }
 
 .ContactPages main .contact-container .contact-info {
@@ -4524,9 +4862,45 @@ nav header .sign-log .signup span:hover {
           flex-direction: column;
 }
 
-.ContactPages main .contact-container .contact-info .header h1 {
-  font-weight: bolder;
-  font-size: 40px;
+.ContactPages main .contact-container .contact-info .header h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 46px;
+  font-weight: 800;
+  line-height: 52px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #282B30;
+}
+
+.ContactPages main .contact-container .contact-info .header span {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #282B30;
+}
+
+.ContactPages main .contact-container .contact-info .contact-details .contact h6 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #282B30;
+  color: #7E8187;
+}
+
+.ContactPages main .contact-container .contact-info .contact-details .contact p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  text-align: left;
+  color: #282B30;
 }
 
 .ContactPages main .contact-container .contact-form .form {
@@ -4603,60 +4977,36 @@ nav header .sign-log .signup span:hover {
 }
 
 .ContactPages main .contact-container .contact-form .form form input[type=submit] {
-  background: #FE724E;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 1.25px;
+  text-align: left;
+  padding: 13px 48px;
+  background-color: #FE724E;
+  border-radius: 50px;
+  color: #f9f9f9;
   cursor: pointer;
-  padding: 0px;
+  text-align: center;
+}
+
+.ContactPages main .contact-container .contact-form .form form input[type=submit] a {
   color: #f9f9f9;
 }
 
-@media screen and (max-width: 1200px) {
-  .ContactPages main .contact-container {
-    height: 100%;
-  }
-  .ContactPages main .contact-container .contact-info {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .ContactPages main .contact-container .contact-info .contact-details .contact {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: 300px;
-  }
+.ContactPages main .connectWithUs p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.4000000059604645px;
+  text-align: left;
+  color: #282B30;
 }
 
-@media screen and (max-width: 1200px) and (max-width: 700px) {
-  .ContactPages main .contact-container .contact-form .form form input {
-    width: 8%;
-  }
-  .ContactPages main .conextra-1, .ContactPages main .conextra-2 {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .ContactPages main .conextra-2 {
-    -webkit-transform: translate(-80px, -100px);
-            transform: translate(-80px, -100px);
-  }
-  .ContactPages main .conextra-2 img {
-    width: 200px;
-  }
+.ContactPages main .connectWithUs ul li img {
+  width: 20px;
 }
 
 .ContactPages main .connectWithUs {
@@ -4690,8 +5040,8 @@ nav header .sign-log .signup span:hover {
   margin: 0px 5px;
 }
 
-.ContactPages main .connectWithUs ul li img {
-  width: calc( 20px + 2rem);
+.ContactPages main .connectWithUs ul li .bi {
+  color: #282B30;
 }
 
 .ContactPages main hr {
@@ -4701,8 +5051,71 @@ nav header .sign-log .signup span:hover {
   border: 0px;
 }
 
-.ContactPages main .copyright p {
+.ContactPages main .copyright h6 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #282B30;
   text-align: center;
+  color: #7E8187;
+}
+
+@media screen and (max-width: 1200px) {
+  .ContactPages main .contact-container {
+    height: 100%;
+  }
+  .ContactPages main .contact-container .contact-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .ContactPages main .contact-container .contact-info .contact-details .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 300px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .ContactPages main .contact-container .contact-info .contact-details .contact h6, .ContactPages main .contact-container .contact-info .contact-details .contact p {
+    text-align: center;
+  }
+  .ContactPages main .conextra-2 {
+    -webkit-transform: translate(-80px, -100px);
+            transform: translate(-80px, -100px);
+  }
+  .ContactPages main .conextra-2 img {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .ContactPages main .conextra-1, .ContactPages main .conextra-2 {
+    display: none;
+  }
+  .ContactPages main .connectWithUs ul {
+    -webkit-transform: translate(17px, 7px);
+            transform: translate(17px, 7px);
+  }
 }
 
 /* End of contact page styling*/
@@ -4767,7 +5180,7 @@ nav header .sign-log .signup span:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 15px;
+  margin-top: 0px;
   z-index: 80;
 }
 
@@ -4925,6 +5338,10 @@ nav header .sign-log .signup span:hover {
   color: #f9f9f9;
 }
 
+.partnerPage .header header .sign-log .signup span a {
+  color: #f9f9f9;
+}
+
 .partnerPage .header header .sign-log .signup span:hover {
   background: transparent;
   color: #FFC42B;
@@ -4941,7 +5358,7 @@ nav header .sign-log .signup span:hover {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
-    padding-top: 30px;
+    padding-top: 0px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -5119,6 +5536,10 @@ nav header .sign-log .signup span:hover {
   width: 300px;
 }
 
+.partnerPage .partner-container .partner-box a span a {
+  color: #f9f9f9;
+}
+
 .partnerPage .partner-container .partner-box a span:hover {
   background-color: transparent;
   color: #FE724E;
@@ -5126,6 +5547,10 @@ nav header .sign-log .signup span:hover {
   padding: 13px 48px;
   outline: 0px;
   border-radius: 50px;
+}
+
+.partnerPage .partner-container .partner-box a span:hover a {
+  color: #FE724E;
 }
 
 .partnerPage .partner-container .partner-box .box-content {
@@ -5237,6 +5662,10 @@ nav header .sign-log .signup span:hover {
   background: rgba(0, 0, 0, 0.837);
   width: 20%;
   margin-right: 150px;
+}
+
+.partnerPage .partner_footer .footer_content span a {
+  color: #f9f9f9;
 }
 
 @media screen and (max-width: 700px) {
@@ -5462,6 +5891,10 @@ nav header .sign-log .signup span:hover {
   left: 70%;
 }
 
+.RestaurantPage main .resturant-content form #next a {
+  color: #f9f9f9;
+}
+
 .RestaurantPage main .resturant-content form #next:hover {
   background-color: transparent;
   color: #FE724E;
@@ -5469,6 +5902,10 @@ nav header .sign-log .signup span:hover {
   padding: 13px 48px;
   outline: 0px;
   border-radius: 50px;
+}
+
+.RestaurantPage main .resturant-content form #next:hover a {
+  color: #FE724E;
 }
 
 .RestaurantPage main .resturant-content form #prev {
@@ -5505,6 +5942,10 @@ nav header .sign-log .signup span:hover {
   left: 70%;
   padding: 20px 40px;
   font-weight: bold;
+}
+
+.RestaurantPage main .resturant-content form input[type=submit] a {
+  color: #f9f9f9;
 }
 
 .RestaurantPage main .resturant-content form .page-1 .header {
@@ -6653,7 +7094,7 @@ nav header .sign-log .signup span:hover {
   position: fixed;
   width: 100%;
   background-color: #F2F2F2;
-  top: 0%;
+  top: -60px;
   height: 70px;
   z-index: 99;
 }
@@ -6718,7 +7159,7 @@ nav header .sign-log .signup span:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 15px;
+  margin-top: 0px;
   z-index: 80;
 }
 
@@ -6876,6 +7317,10 @@ nav header .sign-log .signup span:hover {
   color: #f9f9f9;
 }
 
+.vendorPage nav header .sign-log .signup span a {
+  color: #f9f9f9;
+}
+
 .vendorPage nav header .sign-log .signup span:hover {
   background: transparent;
   color: #FFC42B;
@@ -6892,7 +7337,7 @@ nav header .sign-log .signup span:hover {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
-    padding-top: 30px;
+    padding-top: 0px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -6938,15 +7383,15 @@ nav header .sign-log .signup span:hover {
   margin-left: 30px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 900px) {
   .vendorPage nav {
-    height: 165px;
+    height: 145px;
   }
 }
 
 .vendorPage .breadCrum {
   position: fixed;
-  top: 12%;
+  top: 10%;
   z-index: 9;
 }
 
@@ -7216,6 +7661,9 @@ nav header .sign-log .signup span:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
 }
 
 .vendorPage .main-content-container main .vendor-content-container .vendor-header .title h3 {
@@ -7454,6 +7902,10 @@ nav header .sign-log .signup span:hover {
   text-align: center;
 }
 
+.vendorPage .main-content-container main .vendor-content-container .vendors-content .cateens .cateens-content .button a {
+  color: #f9f9f9;
+}
+
 @media screen and (max-width: 850px) {
   .vendorPage aside .side-menu {
     display: none;
@@ -7483,6 +7935,10 @@ nav header .sign-log .signup span:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    aspect-ratio: 1 / 1;
+  }
+  .vendorPage .main-content-container main .vendor-content-container .vendor-content .canteens {
+    margin: 0px;
   }
 }
 
@@ -8160,6 +8616,10 @@ nav header .sign-log .signup span:hover {
   text-align: center;
 }
 
+.searchPage .searchResult .content-container .canteensResult .cateens .cateens-content .button a {
+  color: #f9f9f9;
+}
+
 .searchPage .errorMessage, .searchPage .tempRes {
   display: none;
   -webkit-box-orient: vertical;
@@ -8191,6 +8651,10 @@ nav header .sign-log .signup span:hover {
   color: #f9f9f9;
   cursor: pointer;
   text-align: center;
+}
+
+.searchPage .errorMessage span a, .searchPage .tempRes span a {
+  color: #f9f9f9;
 }
 
 @media screen and (max-width: 700px) {
@@ -8549,6 +9013,10 @@ nav header .sign-log .signup span:hover {
   text-align: center;
 }
 
+.ShoppingCart-Page .page-1 aside .button span a {
+  color: #f9f9f9;
+}
+
 @media screen and (max-width: 900px) {
   .ShoppingCart-Page .page-1 main {
     padding: 40px;
@@ -8713,6 +9181,10 @@ nav header .sign-log .signup span:hover {
   text-align: center;
 }
 
+.CheckOutPage .page-2 .main-content-container main .userDetails .page-1 .form form input[type=submit] a {
+  color: #f9f9f9;
+}
+
 .CheckOutPage .page-2 .main-content-container main form .type, .CheckOutPage .page-2 .main-content-container main form .ter {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8755,7 +9227,11 @@ nav header .sign-log .signup span:hover {
   text-align: center;
 }
 
-.CheckOutPage .page-2 .main-content-container main form .shippingDetails .header h4, .CheckOutPage .page-2 .main-content-container main form .paymentDetails .header h4 {
+.CheckOutPage .page-2 .main-content-container main form input[type=submit] a, .CheckOutPage .page-2 .main-content-container main form input[type=button] a {
+  color: #f9f9f9;
+}
+
+.CheckOutPage .page-2 .main-content-container main form .shippingDetails .header p, .CheckOutPage .page-2 .main-content-container main form .paymentDetails .header p {
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
   font-weight: 600;
@@ -8763,7 +9239,6 @@ nav header .sign-log .signup span:hover {
   letter-spacing: 0.15000000596046448px;
   text-align: left;
   color: #282B30;
-  font-size: calc(13px + 1.5vw);
   padding: 12px;
 }
 
@@ -8819,6 +9294,7 @@ nav header .sign-log .signup span:hover {
 .completeOrder_Page {
   margin-left: 80px;
   width: 100%;
+  height: 100vh;
 }
 
 .completeOrder_Page .logo {
@@ -8853,7 +9329,25 @@ nav header .sign-log .signup span:hover {
 }
 
 .completeOrder_Page .body_container main {
-  height: 90vh;
+  height: 100vh;
+}
+
+.completeOrder_Page .body_container main section .header .message h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #282B30;
+}
+
+.completeOrder_Page .body_container main section .body div {
+  background-color: #282B30;
+  color: #f9f9f9;
+  padding: 15px;
+  border-radius: 12px;
+  width: 100%;
 }
 
 .completeOrder_Page .body_container main section .footer {
@@ -8881,17 +9375,21 @@ nav header .sign-log .signup span:hover {
   cursor: pointer;
 }
 
+.completeOrder_Page .body_container main section .footer .stuffs .button a {
+  color: #FE724E;
+}
+
 .completeOrder_Page .body_container aside .order-summary {
   width: 400px;
   background: #FE724E;
   padding: 70px 50px 0px 50px;
-  height: 90vh;
+  height: 91vh;
   position: absolute;
   right: 0%;
   top: 0%;
 }
 
-.completeOrder_Page .body_container aside .order-summary h3, .completeOrder_Page .body_container aside .order-summary p, .completeOrder_Page .body_container aside .order-summary h4, .completeOrder_Page .body_container aside .order-summary span {
+.completeOrder_Page .body_container aside .order-summary h6, .completeOrder_Page .body_container aside .order-summary p, .completeOrder_Page .body_container aside .order-summary h4, .completeOrder_Page .body_container aside .order-summary span {
   color: #f9f9f9;
 }
 
@@ -8917,6 +9415,10 @@ nav header .sign-log .signup span:hover {
 @media screen and (max-width: 700px) {
   .completeOrder_Page {
     margin-left: 0px;
+    height: 100%;
+  }
+  .completeOrder_Page h5, .completeOrder_Page h6, .completeOrder_Page p, .completeOrder_Page code {
+    text-align: center;
   }
   .completeOrder_Page .body_container {
     -webkit-box-pack: center;
@@ -8931,26 +9433,23 @@ nav header .sign-log .signup span:hover {
     display: block;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 50px;
   }
-  .completeOrder_Page .body_container main section .footer .stuffs {
+  .completeOrder_Page .body_container main section .footer .stuffs .button {
     display: block;
     margin-right: auto;
     margin-left: auto;
-  }
-  .completeOrder_Page .body_container main section .footer .stuffs p span {
+    width: 60%;
     text-align: center;
   }
-  .completeOrder_Page .body_container main section .footer .stuffs .button {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    max-width: 400px;
+  .completeOrder_Page .body_container main section .header .message h4 {
+    text-align: center;
+  }
+  .completeOrder_Page .body_container main section .body div {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 70%;
   }
 }
 
@@ -9630,7 +10129,8 @@ hr {
       grid-template-columns: 224px 37.29299% auto 360px;
   -ms-grid-rows: 120px 125vh;
       grid-template-rows: 120px 125vh;
-      grid-template-areas: "header header header header" "menu main main side";
+      grid-template-areas: "header header header header"
+ "menu main main side";
   grid-gap: 0px 0px;
   -webkit-box-pack: start;
       -ms-flex-pack: start;

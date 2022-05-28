@@ -2,6 +2,7 @@
 <title>Cart</title>
 </head>
 <style>
+    body{  }
     .hamburger ul{z-index: 99;display: block;transform: translate(-20px,-18px);
         background: #F2F2F2;width: 100%; height: 50px;padding-top: 10px;}
 
@@ -9,7 +10,7 @@
     background: #F2F2F2;width: 100%; height: 50px;padding-top: 10px;}
 
     .darkOverlay{
-        height: 100%;
+        height: 100vh;
     }
 
     /* complete purchase style */
@@ -27,7 +28,7 @@
         padding: 10px 50px;
         border-radius: 16px;
         width: 500px;
-        height: 280px;
+        height: auto;
     }
     .completePurchase .btn{
         width: 97%;
@@ -70,21 +71,12 @@
     .completePurchase .acct .num{ display: flex;align-items: center; gap: 20px; }
     .completePurchase .acct .num .bi{ cursor: pointer;}
 
-    @media  screen and (max-width: 400px) {
-        .completePurchase-container{
-            align-items: flex-end;
-            bottom: 0%;
-        }
-        .completePurchase{
-            border-radius: 50px 50px 0px 0px;
-        }
-    }
 
     input[type=button]{
         
     }
 
-    .navBack{display: flex; column-gap: 10px;position: absolute;top: 2%; right: 3%;color:#FE724E;cursor: pointer;    }
+    .navBack{display: flex; column-gap: 10px;position: absolute;top: 0%; right: 3%;color:#FE724E;cursor: pointer;    }
     @media screen and (max-width: 900px){
     .ShoppingCart-Page .hamburger{display: block;}
     .ShoppingCart-Page .page-1 main{order: 2;padding: 50px 15px 0px 15px;}
@@ -121,21 +113,22 @@
     
     <div class="completePurchase-container">
         <div class="completePurchase">
+            <div>Order Id: <span id="orderId"></span></div>
             <div class="acctNum acct">
                 <h6>Account Number</h6>
                  <div class="num">
                     <i class="bi bi-clipboard"></i>
-                    <p>0262488485</p>
+                    <p>8221484140</p>
                  </div>
             </div>
             <div class="acctBank acct">
                 <h6>Account Bank</h6>
-                <p>GTB</p>
+                <p>WEMA BANK</p>
                 <!-- <i class="bi bi-clipboard-check"></i> -->
             </div>
             <div class="acctName acct">
                 <h6>Account Name</h6>
-                <p>Oori Mark</p>
+                <p>TasteClan</p>
                 <!-- <i class="bi bi-clipboard-check"></i> -->
             </div>
             <div class="btn"><p>OK</p></div>
@@ -152,7 +145,7 @@
                 $('.page-1 aside .aside').css({'display':'none'})
                 ;$('.hamburger ul').css('background','#F2F2F2')}
             count++;
-        }}">
+        }}" style="display: none">
             <ul>
                 <li></li>
                 <li></li>
@@ -271,14 +264,14 @@
                             </div>
                         </div> -->
         
-                 <form action="" id="form" onsubmit="addOrderListToForm()">
+                 <form action="" id="form">
 
                         <!-- shipping Details -->
                         <div class="shippingDetails">
                             <div class="page-3">
                                 <div class="header">
                                     <input type="text" name="orderList" id="orderList" style="display:none">
-                                    <h4>Who is placing this order?</h4>
+                                    <p>Who is placing this order?</p>
                                 </div>
                                 <div class="form">
                                     <input type="email" name="email" id="" placeholder="Email Address">
@@ -287,7 +280,7 @@
                                         <input type="text" name="last_name" id="" placeholder="Last Name">
                                     </div>
                                     <div class="header">
-                                        <h4>Where would you like to send the order?</h4>
+                                        <p>Where would you like to send the order?</p>
                                     </div>
 
                                     <input type="text" name="country" id="" placeholder="Country">
@@ -306,7 +299,7 @@
                                 </div>
                             </div>
                             <div class="submit-button">
-                                <a href="#"><input type="button" value="COMPLETE PURCHASE" onclick="popUpMessage('completePurchase-container')"></a>
+                                <a href="#"><input type="button" value="COMPLETE PURCHASE" ></a>
                             </div>
                         </div>
         
@@ -392,7 +385,6 @@
     // copy account number
     let getAcctNumber = document.querySelector('.acctNum .num p');
 
-
     document.querySelector('.acctNum .num i').addEventListener("click", function(){
         copyToClipboard('.acctNum .num p');
         this.classList.remove('bi-clipboard')
@@ -407,11 +399,33 @@
     document.querySelector('.completePurchase .btn').addEventListener('click', () => {
         popDownMessage('completePurchase-container')
         // clear the Check out section
-        getHtmlElement('#checkOutPage').style.display = "none"
+       // getHtmlElement('#checkOutPage').style.display = "none"
+
+        // add order to form
+        addOrderListToForm()
+
         // submit the form
         document.querySelector('#form').submit()
     })
 
 }
+
+{ // hitting the complete purchase btn
+
+document.querySelector('.submit-button').addEventListener('click', () => {
+
+    const orderId = generateid()
+    localStorage.setItem('orderId', orderId)
+    // display id
+    document.querySelector('#orderId').innerHTML = orderId
+
+
+    console.log(localStorage.getItem('orderId'))
+
+    // 
+    popUpMessage('completePurchase-container')
+})
+}
+
 </script>
 <%- include ("./partials/scripts") %>

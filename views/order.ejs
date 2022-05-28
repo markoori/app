@@ -8,11 +8,11 @@
     .cateens .box .info div{height: 18px;}
     .vendor-content .cateens .img{background: url("https://www.inspiredtaste.net/wp-content/uploads/2019/03/Spaghetti-with-Meat-Sauce-Recipe-1-1200.jpg");
                                   background-size: contain;border-radius: 50%;}
-                                
-    
 </style>
 <body>
     <style>
+           nav{padding-top: 30px}
+           aside{opacity: .4; cursor: not-allowed} 
         /* .vendor-12{opacity: .4;cursor: pointer}
         .cateens .box .info h4{line-height: 2px;text-align: center;}
         .cateens .box .info div{height: 18px;}
@@ -47,8 +47,7 @@
                 <div class="wpages">
                     <ul>
                         <a href="/"><li>Home</li></a>
-                        <a href="/vendors"><li>Vendors</li></a>
-                        <a href="/blog"><li>Blog</li></a>
+                        <a href="/order"><li>Food</li></a>
                         <li><a href="/about">About us</a></li>
                         <a href="/contact"><li>Contact</li></a>
                     </ul>
@@ -552,5 +551,13 @@
         </div>
                 
     </div>
+    <%- include ("./partials/scripts") %>
+    <script>
+        // let cart_items = JSON.parse(window.localStorage.getItem('cart-list'))
+        // console.log("This is cart_items " + cart_items)
+        // // check to see if the food page called it
+        // console.log("This is the length: " + cart_items[cart_items.length - 1][0].length)
+        // console.log(document.getElementById('count'))
+         document.getElementById('count').textContent = `${cartItemLength()}` 
+    </script>
     </body>
-<%- include ("./partials/scripts") %>

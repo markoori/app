@@ -21,8 +21,8 @@ app.use('/img', express.static(__dirname + '/public/img'));
 
 //handling registeration 
 // require("./src/api/form");
-
-
+ 
+ 
 
 app.listen(port,()=>{console.log(
     `The server is running at ${port}`
